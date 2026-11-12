@@ -27,7 +27,6 @@ input[type="date"]{color-scheme:dark}
 @media(max-width:900px){
   .bw-arc{display:none}
   .bw-arc-item{margin-left:0!important}
-  .bw-hero-logo{display:none}
 }
 
 /* Vídeo de fundo do showreel (criado pelo JS quando houver MP4) */
@@ -74,9 +73,13 @@ button[disabled]{opacity:.6;cursor:wait}
 .bw-cta:hover{background:var(--ouro);border-color:var(--ouro);color:var(--preto)}
 .bw-cta:hover svg{transform:translateX(3px)}
 
-/* Logo da abertura — integrado ao fundo, menos chamativo */
-.bw-hero-logo img{opacity:.38;mix-blend-mode:screen;filter:saturate(.75) contrast(1.05);
-  -webkit-mask-image:radial-gradient(circle closest-side,#000 62%,transparent 100%);
-  mask-image:radial-gradient(circle closest-side,#000 62%,transparent 100%);
-  transform:scale(1.15);transition:opacity .6s ease}
-.bw-hero-logo:hover img{opacity:.6}
+/* Arte da abertura — câmeras + logo, fundida ao fundo escuro */
+.bw-hero-art{flex:1 1 440px;max-width:560px;position:relative}
+.bw-hero-art img{display:block;width:100%;height:auto;border-radius:18px;
+  --fx:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);
+  --fy:linear-gradient(180deg,transparent 0,#000 16%,#000 84%,transparent 100%);
+  -webkit-mask-image:var(--fx),var(--fy);-webkit-mask-composite:destination-in;
+  mask-image:var(--fx),var(--fy);mask-composite:intersect;
+  transform:scale(1.08);transition:transform 1.2s ease}
+.bw-hero-art:hover img{transform:scale(1.11)}
+@media(max-width:900px){.bw-hero-art{flex-basis:100%;max-width:100%;margin-top:-8px}.bw-hero-art img{transform:none}}
