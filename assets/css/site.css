@@ -79,9 +79,9 @@ button[disabled]{opacity:.6;cursor:wait}
 .hero-cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .hero-cover::after{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(180deg,rgba(3,3,3,.55) 0%,rgba(3,3,3,0) 18%,rgba(3,3,3,0) 58%,#030303 100%)}
-.hero-txt{position:relative;z-index:2;max-width:880px;margin:-70px auto 0;padding:0 clamp(20px,4vw,40px) 140px;
+.hero-txt{position:relative;z-index:2;max-width:880px;margin:-70px auto 0;padding:0 clamp(20px,4vw,40px) 90px;
   display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
-@media(max-width:700px){.hero-cover{height:auto;aspect-ratio:16/10}.hero-txt{margin-top:-20px;padding-bottom:110px}.hero-txt>div:first-child>span:first-child,.hero-txt>div:first-child>span:last-child{display:none}}
+@media(max-width:700px){.hero-cover{height:auto;aspect-ratio:16/10}.hero-txt{margin-top:-20px;padding-bottom:70px}.hero-txt>div:first-child>span:first-child,.hero-txt>div:first-child>span:last-child{display:none}}
 
 /* Versão maior do botão "Pedir orçamento" (abertura e chamadas) */
 .bw-cta-lg{min-height:48px;padding:0 26px;font-size:13px}
