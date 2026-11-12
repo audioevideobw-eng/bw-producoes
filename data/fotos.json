@@ -490,12 +490,6 @@
     "h": 1080
    },
    {
-    "src": "assets/img/portfolio/2023-06-24_bw_03.webp",
-    "mini": "assets/img/portfolio/2023-06-24_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2023-06-24_bw_04.webp",
     "mini": "assets/img/portfolio/2023-06-24_bw_04-mini.webp",
     "w": 1920,
@@ -658,18 +652,6 @@
     "h": 1080
    },
    {
-    "src": "assets/img/portfolio/2023-06-20_bw_02.webp",
-    "mini": "assets/img/portfolio/2023-06-20_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2023-06-20_bw_03.webp",
-    "mini": "assets/img/portfolio/2023-06-20_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2023-06-20_bw_04.webp",
     "mini": "assets/img/portfolio/2023-06-20_bw_04-mini.webp",
     "w": 1920,
@@ -690,12 +672,6 @@
    {
     "src": "assets/img/portfolio/2023-06-20_bw_07.webp",
     "mini": "assets/img/portfolio/2023-06-20_bw_07-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2023-06-20_bw_08.webp",
-    "mini": "assets/img/portfolio/2023-06-20_bw_08-mini.webp",
     "w": 1920,
     "h": 1080
    },
@@ -886,12 +862,6 @@
    {
     "src": "assets/img/portfolio/2023-06-15_bw_02.webp",
     "mini": "assets/img/portfolio/2023-06-15_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2023-06-15_bw_03.webp",
-    "mini": "assets/img/portfolio/2023-06-15_bw_03-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -1137,21 +1107,6 @@
     "mini": "assets/img/portfolio/2022-12-12_chefa-e-chefa-pai_01-mini.webp",
     "w": 1080,
     "h": 1350
-   }
-  ]
- },
- {
-  "id": "novas-2022-12-12",
-  "titulo": "Bastidores · 12 de dezembro de 2022",
-  "data": "2022-12-12",
-  "quando": "dez/2022",
-  "legenda": "",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2022-12-12_bw_01.webp",
-    "mini": "assets/img/portfolio/2022-12-12_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
    }
   ]
  },
@@ -1791,24 +1746,6 @@
     "mini": "assets/img/portfolio/2021-10-08_bw_01-mini.webp",
     "w": 1920,
     "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-10-08_bw_02.webp",
-    "mini": "assets/img/portfolio/2021-10-08_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-10-08_bw_03.webp",
-    "mini": "assets/img/portfolio/2021-10-08_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-10-08_bw_04.webp",
-    "mini": "assets/img/portfolio/2021-10-08_bw_04-mini.webp",
-    "w": 1920,
-    "h": 1080
    }
   ]
  },
@@ -1828,24 +1765,6 @@
    {
     "src": "assets/img/portfolio/2021-09-16_bw_02.webp",
     "mini": "assets/img/portfolio/2021-09-16_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-09-16_bw_03.webp",
-    "mini": "assets/img/portfolio/2021-09-16_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-09-16_bw_04.webp",
-    "mini": "assets/img/portfolio/2021-09-16_bw_04-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-09-16_bw_05.webp",
-    "mini": "assets/img/portfolio/2021-09-16_bw_05-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -1869,18 +1788,6 @@
     "mini": "assets/img/portfolio/2021-09-15_bw_02-mini.webp",
     "w": 1080,
     "h": 1350
-   },
-   {
-    "src": "assets/img/portfolio/2021-09-15_bw_03.webp",
-    "mini": "assets/img/portfolio/2021-09-15_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-09-15_bw_04.webp",
-    "mini": "assets/img/portfolio/2021-09-15_bw_04-mini.webp",
-    "w": 1920,
-    "h": 1080
    }
   ]
  },
@@ -1894,12 +1801,6 @@
    {
     "src": "assets/img/portfolio/2021-05-23_bw_01.webp",
     "mini": "assets/img/portfolio/2021-05-23_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-05-23_bw_02.webp",
-    "mini": "assets/img/portfolio/2021-05-23_bw_02-mini.webp",
     "w": 1920,
     "h": 1080
    },
@@ -2068,21 +1969,6 @@
   ]
  },
  {
-  "id": "novas-2021-02-03",
-  "titulo": "Bastidores · 3 de fevereiro de 2021",
-  "data": "2021-02-03",
-  "quando": "fev/2021",
-  "legenda": "",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2021-02-03_bw_01.webp",
-    "mini": "assets/img/portfolio/2021-02-03_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
- },
- {
   "id": "novas-2021-01-25",
   "titulo": "Bastidores · 25 de janeiro de 2021",
   "data": "2021-01-25",
@@ -2208,20 +2094,8 @@
   "legenda": "",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-12-17_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-12-17_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2020-12-17_bw_02.webp",
     "mini": "assets/img/portfolio/2020-12-17_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-12-17_bw_03.webp",
-    "mini": "assets/img/portfolio/2020-12-17_bw_03-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -2302,26 +2176,8 @@
   "legenda": "",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-10-25_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-10-25_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2020-10-25_bw_02.webp",
     "mini": "assets/img/portfolio/2020-10-25_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-25_bw_03.webp",
-    "mini": "assets/img/portfolio/2020-10-25_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-25_bw_04.webp",
-    "mini": "assets/img/portfolio/2020-10-25_bw_04-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -2426,12 +2282,6 @@
     "mini": "assets/img/portfolio/2020-10-20_bw_05-mini.webp",
     "w": 1920,
     "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-20_bw_06.webp",
-    "mini": "assets/img/portfolio/2020-10-20_bw_06-mini.webp",
-    "w": 1920,
-    "h": 1080
    }
   ]
  },
@@ -2469,12 +2319,6 @@
   "quando": "out/2020",
   "legenda": "",
   "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-19_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-10-19_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
    {
     "src": "assets/img/portfolio/2020-10-19_bw_02.webp",
     "mini": "assets/img/portfolio/2020-10-19_bw_02-mini.webp",
@@ -2680,12 +2524,6 @@
   "legenda": "",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-10-06_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-10-06_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2020-10-06_bw_02.webp",
     "mini": "assets/img/portfolio/2020-10-06_bw_02-mini.webp",
     "w": 1920,
@@ -2755,12 +2593,6 @@
   "legenda": "",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-10-04_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-10-04_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2020-10-04_bw_02.webp",
     "mini": "assets/img/portfolio/2020-10-04_bw_02-mini.webp",
     "w": 1920,
@@ -2815,18 +2647,6 @@
   "quando": "set/2020",
   "legenda": "",
   "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-09-25_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-09-25_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-09-25_bw_02.webp",
-    "mini": "assets/img/portfolio/2020-09-25_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
    {
     "src": "assets/img/portfolio/2020-09-25_bw_03.webp",
     "mini": "assets/img/portfolio/2020-09-25_bw_03-mini.webp",
@@ -3007,34 +2827,10 @@
   "legenda": "",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-07-08_bw_01.webp",
-    "mini": "assets/img/portfolio/2020-07-08_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2020-07-08_bw_02.webp",
     "mini": "assets/img/portfolio/2020-07-08_bw_02-mini.webp",
     "w": 1080,
     "h": 1350
-   },
-   {
-    "src": "assets/img/portfolio/2020-07-08_bw_03.webp",
-    "mini": "assets/img/portfolio/2020-07-08_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-07-08_bw_04.webp",
-    "mini": "assets/img/portfolio/2020-07-08_bw_04-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-07-08_bw_05.webp",
-    "mini": "assets/img/portfolio/2020-07-08_bw_05-mini.webp",
-    "w": 1920,
-    "h": 1080
    }
   ]
  },
@@ -3095,18 +2891,6 @@
     "h": 1080
    },
    {
-    "src": "assets/img/portfolio/2020-06-24_bw_02.webp",
-    "mini": "assets/img/portfolio/2020-06-24_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-06-24_bw_03.webp",
-    "mini": "assets/img/portfolio/2020-06-24_bw_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2020-06-24_bw_04.webp",
     "mini": "assets/img/portfolio/2020-06-24_bw_04-mini.webp",
     "w": 1920,
@@ -3158,18 +2942,6 @@
    {
     "src": "assets/img/portfolio/2020-06-22_bw_01.webp",
     "mini": "assets/img/portfolio/2020-06-22_bw_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-06-22_bw_02.webp",
-    "mini": "assets/img/portfolio/2020-06-22_bw_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-06-22_bw_03.webp",
-    "mini": "assets/img/portfolio/2020-06-22_bw_03-mini.webp",
     "w": 1920,
     "h": 1080
    }
