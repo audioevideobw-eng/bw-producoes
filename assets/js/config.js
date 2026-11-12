@@ -11,7 +11,8 @@ window.BW_CONFIG = {
   whatsapp_msg: "Olá! Vim pelo site da BW Produções e quero um orçamento.",
   email: "audioevideobw@gmail.com",                    // ex.: "contato@bwproducoes.com.br"
   instagram: "audioevideobw",                // usuário sem @. Ex.: "bwproducoes"
-  youtube: "",                  // link do canal. Ex.: "https://youtube.com/@bwproducoes"
+  youtube: "https://www.youtube.com/@bwproducoes2626",
+  tiktok: "marcosvbonfa",                  // link do canal. Ex.: "https://youtube.com/@bwproducoes"
   regiao: "Belo Horizonte, região metropolitana e Minas Gerais",                   // ex.: "Belo Horizonte e região"
   horario: "",                  // ex.: "Seg. a sex., 9h às 18h · eventos em qualquer dia"
   mapa_embed_url: "https://www.google.com/maps?q=Belo+Horizonte,+MG&z=9&output=embed",           // Google Maps > Compartilhar > Incorporar mapa > copie só o link do src

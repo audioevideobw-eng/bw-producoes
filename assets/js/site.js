@@ -31,6 +31,7 @@
     email: function () { return C.email ? "mailto:" + C.email : null; },
     instagram: function () { return C.instagram ? "https://instagram.com/" + String(C.instagram).replace(/^@/, "") : null; },
     youtube: function () { return C.youtube || null; },
+    tiktok: function () { return C.tiktok ? "https://www.tiktok.com/@" + String(C.tiktok).replace(/^@/, "") : null; },
     mapa: function () { return C.regiao ? "https://www.google.com/maps/search/" + encodeURIComponent(C.regiao) : null; }
   };
   var TEXTOS = {
