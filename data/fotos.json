@@ -1,5 +1,116 @@
 [
  {
+  "id": "2026-11-12_eventos-realizados",
+  "titulo": "Eventos Realizados",
+  "data": "2026-11-12",
+  "quando": "nov/2026",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_01.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_02.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_03.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_04.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_05.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_06.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_06-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_07.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_07-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_08.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_08-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_09.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_09-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_10.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_10-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_11.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_11-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_12.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_12-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_13.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_13-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_14.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_14-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_15.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_15-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_16.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_16-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_17.webp",
+    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_17-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2026-09-21_gravacao-na-integra-e-transmissao-para-painel",
   "titulo": "Gravação na Íntegra e Transmissão para painel de Led (Show de Talentos…",
   "data": "2026-09-21",
