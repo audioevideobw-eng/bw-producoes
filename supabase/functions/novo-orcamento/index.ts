@@ -17,6 +17,7 @@
 //      EMAIL_FROM          remetente verificado. Ex.: "BW Produções <contato@bwproducoes.com.br>"
 //   EMAIL_DONO          seu e-mail, para receber os pedidos
 //   NTFY_TOPIC          (opcional) tópico do app ntfy. Ex.: "bw-orcamentos-8f3k2"
+//   NTFY_TOKEN          (recomendado) token de acesso da sua conta ntfy.sh (evita erro 429)
 //   CALLMEBOT_PHONE     (opcional) seu WhatsApp com DDI. Ex.: "5531999999999"
 //   CALLMEBOT_APIKEY    (opcional) chave que o CallMeBot manda para você
 //   WHATSAPP_BW         (opcional) WhatsApp da BW para o botão do e-mail do cliente
@@ -67,7 +68,11 @@ async function avisarCelular(p: Pedido) {
     // Formato JSON: aceita acentos no título e na mensagem.
     const r = await fetch("https://ntfy.sh/", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        // Com token, o limite é da sua conta ntfy (servidores compartilhados recebem erro 429 sem conta).
+        ...(env("NTFY_TOKEN") ? { Authorization: `Bearer ${env("NTFY_TOKEN")}` } : {}),
+      },
       body: JSON.stringify({
         topic: topico,
         title: "BW Produções — novo orçamento",
