@@ -30,5 +30,5 @@ window.BW_CONFIG = {
   supabase_anon_key: "sb_publishable_qJ2mIx1hcn_ZH75-yxJiDA_OI-EHyIU",
 
   /* ---- Métricas ---- */
-  ga4_id: ""                    // Google Analytics 4. Ex.: "G-XXXXXXXXXX"
+  ga4_id: "G-9NVDNHKRFB"                    // Google Analytics 4. Ex.: "G-XXXXXXXXXX"
 };
