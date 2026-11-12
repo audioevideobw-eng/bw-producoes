@@ -25,12 +25,6 @@
     "h": 1080
    },
    {
-    "src": "assets/img/portfolio/2026-11-12_eventos-realizados_04.webp",
-    "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_04-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
     "src": "assets/img/portfolio/2026-11-12_eventos-realizados_05.webp",
     "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_05-mini.webp",
     "w": 1920,
@@ -105,6 +99,21 @@
    {
     "src": "assets/img/portfolio/2026-11-12_eventos-realizados_17.webp",
     "mini": "assets/img/portfolio/2026-11-12_eventos-realizados_17-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "2026-11-12_maurilio-bonfa",
+  "titulo": "Maurílio Bonfá",
+  "data": "2026-11-12",
+  "quando": "nov/2026",
+  "legenda": "Maurílio Bonfá",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2026-11-12_maurilio-bonfa_01.webp",
+    "mini": "assets/img/portfolio/2026-11-12_maurilio-bonfa_01-mini.webp",
     "w": 1920,
     "h": 1080
    }
