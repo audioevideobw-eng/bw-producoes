@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /bw-producoes/admin.html
+
 Sitemap: https://audioevideobw-eng.github.io/bw-producoes/sitemap.xml

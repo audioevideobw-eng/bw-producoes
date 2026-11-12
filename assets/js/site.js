@@ -115,6 +115,8 @@
     if (!player) return;
     var frame = $(".player-frame", player);
     frame.innerHTML = "";
+    frame.classList.remove("foto");
+    galeria.lista = [];
     frame.classList.toggle("vertical", !!e.vertical);
     var el;
     if (e.src) {
@@ -159,57 +161,61 @@
   }
 
   /* ------------------------------------------------------------ PORTFÓLIO */
-  var ROTULO = { transmissao: "Transmissão ao vivo", corporativo: "Corporativo", show: "Show", aftermovie: "Aftermovie", fotografia: "Fotografia" };
+  /* Vídeos: data/youtube.json (atualizado sozinho pelo GitHub Actions a partir do canal).
+     Fotos: tabela portfolio_fotos + Storage "portfolio" no Supabase (enviadas pelo admin.html). */
   var ICONE_PLAY = '<path d="M8 5v14l11-7z"/>';
-  var ICONE_FOTO = '<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>';
+  var ICONE_FOTO = '<path d="M3 7h3l2-3h8l2 3h3v13H3z"/><circle cx="12" cy="13" r="4"/>';
+  var CATEGORIA = { eventos: "Eventos", corporativo: "Corporativo", shows: "Shows", ensaios: "Ensaios", outros: "Fotografia" };
 
-  function normalizarTipo(t) {
-    t = String(t || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-    if (/transm|ao vivo|live/.test(t)) return "transmissao";
-    if (/corpor|conven|empresa/.test(t)) return "corporativo";
-    if (/show|musica|banda/.test(t)) return "show";
-    if (/after|teaser|video/.test(t)) return "aftermovie";
-    if (/foto|ensaio/.test(t)) return "fotografia";
-    return "transmissao";
+  function urlStorage(caminho) {
+    if (!caminho) return "";
+    if (/^https?:/.test(caminho)) return caminho;
+    return String(C.supabase_url || "").replace(/\/$/, "") + "/storage/v1/object/public/portfolio/" + caminho.split("/").map(encodeURIComponent).join("/");
   }
-  function sim(v) { return /^(sim|s|x|1|true|yes)$/i.test(String(v || "").trim()); }
-
-  function parseCSV(txt) {
-    var linhas = [], campo = "", linha = [], aspas = false;
-    for (var i = 0; i < txt.length; i++) {
-      var c = txt[i];
-      if (aspas) {
-        if (c === '"' && txt[i + 1] === '"') { campo += '"'; i++; }
-        else if (c === '"') aspas = false;
-        else campo += c;
-      } else if (c === '"') aspas = true;
-      else if (c === ",") { linha.push(campo); campo = ""; }
-      else if (c === "\n" || c === "\r") {
-        if (c === "\r" && txt[i + 1] === "\n") i++;
-        linha.push(campo); linhas.push(linha); linha = []; campo = "";
-      } else campo += c;
-    }
-    if (campo || linha.length) { linha.push(campo); linhas.push(linha); }
-    var cab = (linhas.shift() || []).map(function (h) { return h.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "_"); });
-    return linhas.filter(function (l) { return l.some(function (x) { return x.trim(); }); }).map(function (l) {
-      var o = {}; cab.forEach(function (h, k) { o[h] = (l[k] || "").trim(); }); return o;
+  var _sb = null;
+  function supa() {
+    if (_sb) return _sb;
+    if (!window.supabase || !C.supabase_url || !C.supabase_anon_key) return null;
+    _sb = window.supabase.createClient(C.supabase_url, C.supabase_anon_key, { auth: { persistSession: false } });
+    return _sb;
+  }
+  function esperarSupabase(ms) {
+    return new Promise(function (ok) {
+      var t0 = Date.now();
+      (function checa() {
+        if (window.supabase || Date.now() - t0 > ms) return ok();
+        setTimeout(checa, 60);
+      })();
     });
   }
-
-  function carregarPortfolio() {
-    var fonte = C.portfolio_csv_url
-      ? fetch(C.portfolio_csv_url, { cache: "no-store" }).then(function (r) { if (!r.ok) throw r; return r.text(); }).then(parseCSV)
-      : fetch("data/portfolio.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw r; return r.json(); });
-    return fonte.then(function (lista) {
-      return lista.map(function (p, i) {
-        return {
-          titulo: p.titulo || "Trabalho", cliente: p.cliente || "", ano: p.ano || "",
-          tipo: normalizarTipo(p.tipo), video: p.video_url || p.video || "", capa: p.capa_url || p.capa || "",
-          link: p.link || p.galeria || "", destaque: p.destaque === true || sim(p.destaque),
-          ordem: parseFloat(p.ordem) || 1000 + i, publicado: p.publicado === undefined || p.publicado === "" || p.publicado === true || sim(p.publicado)
-        };
-      }).filter(function (p) { return p.publicado; }).sort(function (a, b) { return a.ordem - b.ordem; });
-    });
+  function carregarVideos() {
+    return fetch("data/youtube.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : { videos: [] }; })
+      .then(function (d) {
+        return (d.videos || []).filter(function (v) { return v.id; }).map(function (v) {
+          return { tipo: "video", titulo: v.titulo || "Vídeo", legenda: v.short ? "Short · YouTube" : "YouTube", capa: v.capa || ("https://i.ytimg.com/vi/" + v.id + "/hqdefault.jpg"),
+            url: v.short ? "https://www.youtube.com/shorts/" + v.id : "https://www.youtube.com/watch?v=" + v.id, id: v.id, short: !!v.short, data: v.publicado || "" };
+        });
+      }).catch(function () { return []; });
+  }
+  function carregarFotos() {
+    return esperarSupabase(4000).then(function () {
+      var sb = supa();
+      if (!sb) return [];
+      return sb.from("portfolio_fotos").select("id,titulo,legenda,categoria,caminho,miniatura,largura,altura,destaque,ordem,created_at")
+        .eq("publicado", true).order("destaque", { ascending: false }).order("ordem", { ascending: true }).order("created_at", { ascending: false })
+        .then(function (r) {
+          if (r.error) return [];
+          return (r.data || []).map(function (f) {
+            return { tipo: "foto", titulo: f.titulo || CATEGORIA[f.categoria] || "Fotografia", legenda: f.legenda || CATEGORIA[f.categoria] || "",
+              capa: urlStorage(f.miniatura || f.caminho), grande: urlStorage(f.caminho), destaque: f.destaque, data: f.created_at || "" };
+          });
+        });
+    }).catch(function () { return []; });
+  }
+  function intercalar(a, b) {
+    var out = [], i = 0;
+    while (i < a.length || i < b.length) { if (i < a.length) out.push(a[i]); if (i < b.length) out.push(b[i]); i++; }
+    return out;
   }
 
   function svg(paths, size, cor) {
@@ -217,58 +223,102 @@
   }
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
 
-  function card(p) {
+  function card(p, aoClicar) {
     var art = document.createElement("article");
-    art.className = "pf-card";
-    art.dataset.tipo = p.tipo;
+    art.className = "pf-card pf-" + p.tipo;
     art.style.cssText = "border-radius:20px;overflow:hidden;background:#161616;border:1px solid rgba(250,249,247,0.08);display:flex;flex-direction:column";
-    var temVideo = !!p.video, alvo = p.video || p.link || p.capa;
-    var btn = document.createElement(alvo ? "button" : "div");
+    var btn = document.createElement("button");
+    btn.type = "button";
     btn.className = "pf-cover";
-    if (alvo) { btn.type = "button"; btn.setAttribute("aria-label", (temVideo ? "Assistir " : "Ver ") + p.titulo); }
+    btn.setAttribute("aria-label", (p.tipo === "video" ? "Assistir: " : "Ampliar foto: ") + p.titulo);
     btn.innerHTML =
-      (p.capa ? '<img src="' + esc(p.capa) + '" alt="" loading="lazy">' : "") +
-      '<span style="position:absolute;left:16px;top:16px;padding:6px 12px;border-radius:999px;background:#857B40;color:#030303;font-family:Montserrat,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">' + esc(ROTULO[p.tipo]) + "</span>" +
-      (alvo ? '<span style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(250,249,247,.92);display:inline-flex;align-items:center;justify-content:center">' + svg(temVideo ? ICONE_PLAY : ICONE_FOTO, 24, "#030303") + "</span>" : "");
-    if (alvo) btn.addEventListener("click", function () {
-      if (p.video) abrirPlayer(p.video, p.titulo);
-      else if (p.link) window.open(p.link, "_blank", "noopener");
-      else abrirPlayer(p.capa, p.titulo);
-    });
+      (p.capa ? '<img src="' + esc(p.capa) + '" alt="" loading="lazy" decoding="async">' : "") +
+      '<span class="pf-tag">' + (p.tipo === "video" ? "Vídeo" : "Fotografia") + "</span>" +
+      '<span class="pf-play">' + svg(p.tipo === "video" ? ICONE_PLAY : ICONE_FOTO, 24, "#030303") + "</span>";
+    btn.addEventListener("click", aoClicar);
     var info = document.createElement("div");
     info.style.cssText = "padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px";
-    info.innerHTML = '<h3 style="margin:0;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;color:#FAF9F7">' + esc(p.titulo) + "</h3>" +
-      '<span style="font-size:14px;color:#A3A3A3">' + esc([p.cliente, p.ano].filter(Boolean).join(" · ")) + "</span>";
+    info.innerHTML = '<h3 style="margin:0;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;line-height:1.3;color:#FAF9F7">' + esc(p.titulo) + "</h3>" +
+      (p.legenda ? '<span style="font-size:14px;color:#A3A3A3">' + esc(p.legenda) + "</span>" : "");
     art.appendChild(btn); art.appendChild(info);
     return art;
   }
 
-  var ESTILO_ATIVO = "background: rgba(133,123,64,0.12); border: 2px solid #857B40; color: #FAF9F7; box-shadow: 0 0 24px rgba(133,123,64,0.25)";
-  var ESTILO_INATIVO = "background: #161616; border: 1px solid rgba(250,249,247,0.1); color: #D6D3CD; box-shadow: none";
-  function estiloFiltro(b, ativo) {
-    var base = "min-height: 104px; border-radius: 18px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-family: Montserrat, sans-serif; font-size: 14px; font-weight: 600; ";
-    b.setAttribute("style", base + (ativo ? ESTILO_ATIVO : ESTILO_INATIVO));
-    b.setAttribute("aria-pressed", ativo ? "true" : "false");
-    var ic = b.querySelector("span");
-    if (ic) ic.style.color = ativo ? "#857B40" : "#A3A3A3";
+  /* Galeria de fotos (tela cheia, com anterior/próxima) */
+  var galeria = { lista: [], i: 0 };
+  function mostrarFoto() {
+    var f = galeria.lista[galeria.i];
+    var frame = $(".player-frame", player);
+    frame.innerHTML = '<img src="' + esc(f.grande || f.capa) + '" alt="' + esc(f.titulo) + '">' +
+      (galeria.lista.length > 1 ? '<button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button><button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>' : "") +
+      '<span class="gal-cap">' + esc(f.titulo) + (f.legenda ? " · " + esc(f.legenda) : "") + '<b>' + (galeria.i + 1) + " / " + galeria.lista.length + "</b></span>";
+    var pv = $(".gal-prev", frame), nx = $(".gal-next", frame);
+    if (pv) pv.addEventListener("click", function (e) { e.stopPropagation(); passoFoto(-1); });
+    if (nx) nx.addEventListener("click", function (e) { e.stopPropagation(); passoFoto(1); });
+  }
+  function passoFoto(d) {
+    if (!galeria.lista.length) return;
+    galeria.i = (galeria.i + d + galeria.lista.length) % galeria.lista.length;
+    mostrarFoto();
+  }
+  function abrirGaleria(lista, i) {
+    player = player || $("#player");
+    if (!player) return;
+    galeria.lista = lista; galeria.i = i;
+    var frame = $(".player-frame", player);
+    frame.classList.remove("vertical");
+    frame.classList.add("foto");
+    mostrarFoto();
+    ultimoFoco = document.activeElement;
+    player.hidden = false;
+    document.body.style.overflow = "hidden";
+    $(".player-close", player).focus();
+    track("ver_foto", { titulo: lista[i].titulo });
+  }
+  document.addEventListener("keydown", function (ev) {
+    if (!player || player.hidden || !galeria.lista.length || !$(".player-frame.foto", player)) return;
+    if (ev.key === "ArrowLeft") passoFoto(-1);
+    if (ev.key === "ArrowRight") passoFoto(1);
+  });
+
+  function destaqueVideo(videos) {
+    var sr = $("#showreel");
+    if (!sr) return;
+    var v = videos.filter(function (x) { return !x.short; })[0] || videos[0];
+    var secao = sr.closest("section");
+    if (!v) { if (secao) secao.hidden = true; return; }
+    var img = document.createElement("img");
+    img.src = "https://i.ytimg.com/vi/" + v.id + "/maxresdefault.jpg";
+    img.onerror = function () { img.onerror = null; img.src = v.capa; };
+    img.alt = "";
+    img.className = "sr-capa";
+    sr.insertBefore(img, sr.firstChild);
+    var tit = $(".sr-titulo", sr), sub = $(".sr-sub", sr);
+    if (tit) tit.textContent = v.titulo;
+    if (sub) sub.textContent = "Último vídeo do canal · toca aqui no site";
+    sr.setAttribute("aria-label", "Assistir: " + v.titulo);
+    sr.addEventListener("click", function (ev) { ev.preventDefault(); ev.stopImmediatePropagation(); abrirPlayer(v.url, v.titulo); }, true);
   }
 
   function iniciarPortfolio() {
     var grid = $("#pf-grid");
-    if (!grid) return;
-    var passo = parseInt(grid.dataset.limit, 10) || 9;
-    var naHome = document.body.dataset.page === "index";
+    var sr = $("#showreel");
+    if (!grid && !sr) return;
+    var passo = grid ? (parseInt(grid.dataset.limit, 10) || 9) : 9;
     var mais = $("#pf-more");
-    var filtro = "todos", limite = passo, todos = [];
+    var filtro = "todos", limite = passo, videos = [], fotos = [];
 
     function desenhar() {
-      var lista = todos.filter(function (p) { return filtro === "todos" || p.tipo === filtro; });
-      if (naHome && filtro === "todos") {
-        lista = lista.filter(function (p) { return p.destaque; }).concat(lista.filter(function (p) { return !p.destaque; }));
-      }
+      if (!grid) return;
+      var lista = filtro === "video" ? videos : filtro === "foto" ? fotos : intercalar(videos, fotos);
       grid.innerHTML = "";
-      lista.slice(0, limite).forEach(function (p) { grid.appendChild(card(p)); });
-      if (!lista.length) grid.innerHTML = '<p class="pf-empty">Em breve, trabalhos desta categoria.</p>';
+      lista.slice(0, limite).forEach(function (p) {
+        grid.appendChild(card(p, function () {
+          if (p.tipo === "video") abrirPlayer(p.url, p.titulo);
+          else abrirGaleria(fotos, fotos.indexOf(p));
+        }));
+      });
+      if (!lista.length) grid.innerHTML = '<p class="pf-empty">' + (filtro === "foto" ? "Em breve, novas fotografias por aqui." : filtro === "video" ? "Em breve, novos vídeos por aqui." : "Em breve, novos trabalhos por aqui.") + "</p>";
       if (mais) mais.hidden = lista.length <= limite;
     }
     $$(".pf-filter").forEach(function (b) {
@@ -282,10 +332,23 @@
     });
     if (mais) mais.addEventListener("click", function () { limite += passo; desenhar(); });
 
-    carregarPortfolio().then(function (lista) {
-      todos = lista;
-      if (todos.length) desenhar();
-    }).catch(function () { /* sem dados: mantém os cards de exemplo do HTML */ });
+    if (grid) grid.innerHTML = '<p class="pf-empty">Carregando trabalhos…</p>';
+    carregarVideos().then(function (v) {
+      videos = v;
+      destaqueVideo(videos);
+      desenhar();
+      return carregarFotos();
+    }).then(function (f) { fotos = f || []; desenhar(); });
+  }
+
+  var ESTILO_ATIVO = "background: rgba(133,123,64,0.12); border: 2px solid #857B40; color: #FAF9F7; box-shadow: 0 0 24px rgba(133,123,64,0.25)";
+  var ESTILO_INATIVO = "background: #161616; border: 1px solid rgba(250,249,247,0.1); color: #D6D3CD; box-shadow: none";
+  function estiloFiltro(b, ativo) {
+    var base = "min-height: 104px; border-radius: 18px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-family: Montserrat, sans-serif; font-size: 14px; font-weight: 600; ";
+    b.setAttribute("style", base + (ativo ? ESTILO_ATIVO : ESTILO_INATIVO));
+    b.setAttribute("aria-pressed", ativo ? "true" : "false");
+    var ic = b.querySelector("span");
+    if (ic) ic.style.color = ativo ? "#857B40" : "#A3A3A3";
   }
 
   /* ------------------------------------------------------------ FORMULÁRIO */

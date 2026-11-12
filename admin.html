@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Painel do portfólio — BW Produções</title>
+<meta name="theme-color" content="#030303">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script src="assets/js/config.js?v=20261112g"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<style>
+  :root{--preto:#030303;--papel:#FAF9F7;--ouro:#857B40;--prata:#A3A3A3;--card:#141414;--linha:rgba(250,249,247,.1)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--preto);color:var(--papel);font-family:Inter,system-ui,sans-serif;min-height:100vh}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+  header{border-bottom:1px solid var(--linha)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+  .marca{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .marca img{height:46px}
+  .marca span{font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;letter-spacing:.04em}
+  h1,h2{font-family:Montserrat,sans-serif;margin:0}
+  h1{font-size:clamp(26px,3vw,34px);font-weight:800}
+  h2{font-size:18px;font-weight:700}
+  .muted{color:var(--prata);font-size:14px;line-height:1.6}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;border:1px solid rgba(133,123,64,.7);
+    background:rgba(133,123,64,.08);color:var(--papel);font-family:Montserrat,sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+  .btn:hover{background:var(--ouro);color:var(--preto)}
+  .btn.cheio{background:var(--ouro);color:var(--preto);border-color:var(--ouro)}
+  .btn.cheio:hover{filter:brightness(1.1)}
+  .btn.peq{min-height:34px;padding:0 12px;font-size:11px;letter-spacing:.08em}
+  .btn.perigo{border-color:rgba(220,90,80,.6);background:transparent}
+  .btn.perigo:hover{background:#c0463c;color:#fff;border-color:#c0463c}
+  .btn[disabled]{opacity:.5;pointer-events:none}
+  .card{background:var(--card);border:1px solid var(--linha);border-radius:20px;padding:clamp(20px,3vw,32px)}
+  label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:500;color:#D6D3CD}
+  input,select{width:100%;min-height:48px;padding:0 14px;border-radius:12px;border:1px solid var(--linha);background:#0C0C0C;color:var(--papel);font:inherit;font-size:15px}
+  input:focus,select:focus{outline:2px solid var(--ouro);outline-offset:1px}
+  .grade2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .msg{font-size:14px;min-height:20px}
+  .msg.erro{color:#ff8f86}.msg.ok{color:#c9c2a0}
+  #login{max-width:440px;margin:clamp(40px,10vh,100px) auto;display:flex;flex-direction:column;gap:18px}
+  #painel{display:none;padding:36px 0 80px;flex-direction:column;gap:28px}
+  .drop{border:2px dashed rgba(133,123,64,.55);border-radius:18px;padding:36px 20px;text-align:center;cursor:pointer;transition:background .2s ease}
+  .drop.sobre,.drop:hover{background:rgba(133,123,64,.08)}
+  .drop strong{display:block;font-family:Montserrat,sans-serif;font-size:17px;margin-bottom:6px}
+  .fila{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+  .fila div{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;color:#D6D3CD;padding:10px 14px;border-radius:10px;background:#0C0C0C}
+  .lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+  .foto{background:#0C0C0C;border:1px solid var(--linha);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+  .foto.oculta{opacity:.55}
+  .foto .img{position:relative;aspect-ratio:4/3;background:#111}
+  .foto .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .foto .selo{position:absolute;left:10px;top:10px;padding:4px 10px;border-radius:999px;background:var(--ouro);color:var(--preto);font-family:Montserrat,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .foto .corpo{padding:12px;display:flex;flex-direction:column;gap:8px}
+  .foto input,.foto select{min-height:38px;font-size:13.5px;padding:0 10px;border-radius:9px}
+  .foto .acoes{display:flex;flex-wrap:wrap;gap:6px}
+  .topo{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="marca" href="index.html"><img src="assets/img/logo-bw.png" alt="BW Produções"><span>Painel do portfólio</span></a>
+  <div style="display:flex;gap:10px;align-items:center"><a class="btn peq" href="portfolio.html" target="_blank" rel="noopener">Ver portfólio</a><button class="btn peq" id="sair" hidden>Sair</button></div>
+</div></header>
+
+<main class="wrap">
+  <!-- LOGIN -->
+  <form id="login" class="card" novalidate>
+    <h1>Entrar</h1>
+    <p class="muted">Área restrita para enviar e organizar as fotos do portfólio.</p>
+    <label>E-mail<input type="email" name="email" autocomplete="username" required></label>
+    <label>Senha<input type="password" name="senha" autocomplete="current-password" required></label>
+    <p class="msg" id="msg-login" role="status" aria-live="polite"></p>
+    <button class="btn cheio" type="submit">Entrar</button>
+  </form>
+
+  <!-- PAINEL -->
+  <section id="painel">
+    <div class="topo">
+      <div><h1>Fotos do portfólio</h1><p class="muted" id="quem"></p></div>
+      <p class="muted" style="max-width:420px">Os vídeos entram sozinhos a partir do canal do YouTube. Aqui você cuida só das fotografias.</p>
+    </div>
+
+    <div class="card" style="display:flex;flex-direction:column;gap:18px">
+      <h2>Enviar novas fotos</h2>
+      <div class="grade2">
+        <label>Categoria
+          <select id="categoria">
+            <option value="eventos">Eventos</option>
+            <option value="corporativo">Corporativo</option>
+            <option value="shows">Shows</option>
+            <option value="ensaios">Ensaios</option>
+            <option value="outros">Outros</option>
+          </select>
+        </label>
+        <label>Título (opcional)<input id="titulo" maxlength="120" placeholder="Ex.: Convenção Arte Eventos"></label>
+        <label>Legenda (opcional)<input id="legenda" maxlength="160" placeholder="Ex.: Cliente · Local · 2026"></label>
+      </div>
+      <label class="drop" id="drop" tabindex="0">
+        <strong>Clique ou arraste as fotos aqui</strong>
+        <span class="muted">JPG, PNG ou WEBP. Pode enviar várias de uma vez — o site reduz e otimiza cada uma automaticamente.</span>
+        <input type="file" id="arquivos" accept="image/jpeg,image/png,image/webp" multiple hidden>
+      </label>
+      <div class="fila" id="fila"></div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="topo"><h2 id="total">Fotos publicadas</h2><p class="muted">“Destaque” coloca a foto no início. “Ocultar” tira do site sem apagar.</p></div>
+      <div class="lista" id="lista"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var C = window.BW_CONFIG || {};
+  var sb = window.supabase.createClient(C.supabase_url, C.supabase_anon_key);
+  var BUCKET = "portfolio";
+  var $ = function (s) { return document.querySelector(s); };
+  var CAT = { eventos: "Eventos", corporativo: "Corporativo", shows: "Shows", ensaios: "Ensaios", outros: "Outros" };
+
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function pub(caminho) { return sb.storage.from(BUCKET).getPublicUrl(caminho).data.publicUrl; }
+  function msg(el, t, tipo) { el.textContent = t; el.className = "msg " + (tipo || ""); }
+
+  /* ---------- sessão ---------- */
+  function mostrarLogin() { $("#login").style.display = "flex"; $("#painel").style.display = "none"; $("#sair").hidden = true; }
+  function mostrarPainel(user) {
+    $("#login").style.display = "none"; $("#painel").style.display = "flex"; $("#sair").hidden = false;
+    $("#quem").textContent = "Conectado como " + user.email;
+    listar();
+  }
+  function verificar(session) {
+    if (!session) return mostrarLogin();
+    sb.rpc("is_bw_admin").then(function (r) {
+      if (r.data === true) mostrarPainel(session.user);
+      else { sb.auth.signOut(); mostrarLogin(); msg($("#msg-login"), "Este e-mail não tem permissão para editar o portfólio.", "erro"); }
+    });
+  }
+  sb.auth.getSession().then(function (r) { verificar(r.data.session); });
+
+  $("#login").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var f = ev.target, m = $("#msg-login");
+    msg(m, "Entrando…");
+    sb.auth.signInWithPassword({ email: f.email.value.trim(), password: f.senha.value }).then(function (r) {
+      if (r.error) return msg(m, "E-mail ou senha incorretos.", "erro");
+      f.senha.value = ""; msg(m, "");
+      verificar(r.data.session);
+    });
+  });
+  $("#sair").addEventListener("click", function () { sb.auth.signOut().then(mostrarLogin); });
+
+  /* ---------- otimização da imagem no navegador ---------- */
+  function carregarImagem(file) {
+    return new Promise(function (ok, erro) {
+      var url = URL.createObjectURL(file), img = new Image();
+      img.onload = function () { ok(img); };
+      img.onerror = function () { erro(new Error("Arquivo de imagem inválido")); };
+      img.src = url;
+    });
+  }
+  function reduzir(img, maior, qualidade) {
+    var w = img.naturalWidth, h = img.naturalHeight, k = Math.min(1, maior / Math.max(w, h));
+    var c = document.createElement("canvas");
+    c.width = Math.round(w * k); c.height = Math.round(h * k);
+    var x = c.getContext("2d");
+    x.imageSmoothingQuality = "high";
+    x.drawImage(img, 0, 0, c.width, c.height);
+    return new Promise(function (ok) { c.toBlob(function (b) { ok({ blob: b, w: c.width, h: c.height }); }, "image/jpeg", qualidade); });
+  }
+  function uid() { return (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2)); }
+
+  /* ---------- envio ---------- */
+  var drop = $("#drop"), input = $("#arquivos"), fila = $("#fila");
+  drop.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); input.click(); } });
+  ["dragenter", "dragover"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.add("sobre"); }); });
+  ["dragleave", "drop"].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove("sobre"); }); });
+  drop.addEventListener("drop", function (e) { enviarTodos(e.dataTransfer.files); });
+  input.addEventListener("change", function () { enviarTodos(input.files); input.value = ""; });
+
+  function enviarTodos(lista) {
+    var arquivos = Array.prototype.filter.call(lista || [], function (f) { return /^image\/(jpeg|png|webp)$/.test(f.type); });
+    if (!arquivos.length) return;
+    var meta = { categoria: $("#categoria").value, titulo: $("#titulo").value.trim(), legenda: $("#legenda").value.trim() };
+    var p = Promise.resolve();
+    arquivos.forEach(function (f) {
+      var linha = document.createElement("div");
+      linha.innerHTML = "<span>" + esc(f.name) + "</span><b>na fila</b>";
+      fila.prepend(linha);
+      p = p.then(function () { return enviarUm(f, meta, linha.querySelector("b")); });
+    });
+    p.then(listar);
+  }
+  function enviarUm(file, meta, estado) {
+    var id = uid(), ano = new Date().getFullYear(), base = "fotos/" + ano + "/" + id;
+    estado.textContent = "otimizando…";
+    return carregarImagem(file).then(function (img) {
+      return Promise.all([reduzir(img, 2400, 0.86), reduzir(img, 900, 0.8)]);
+    }).then(function (r) {
+      estado.textContent = "enviando…";
+      var grande = r[0], mini = r[1];
+      return sb.storage.from(BUCKET).upload(base + ".jpg", grande.blob, { contentType: "image/jpeg", cacheControl: "31536000" })
+        .then(function (u) { if (u.error) throw u.error; return sb.storage.from(BUCKET).upload(base + "-mini.jpg", mini.blob, { contentType: "image/jpeg", cacheControl: "31536000" }); })
+        .then(function (u) { if (u.error) throw u.error;
+          return sb.from("portfolio_fotos").insert([{ titulo: meta.titulo, legenda: meta.legenda, categoria: meta.categoria,
+            caminho: base + ".jpg", miniatura: base + "-mini.jpg", largura: grande.w, altura: grande.h }]); })
+        .then(function (i) { if (i.error) throw i.error; estado.textContent = "✓ publicada"; estado.style.color = "#c9c2a0"; });
+    }).catch(function (e) {
+      estado.textContent = "erro: " + (e && e.message ? e.message : "não enviada");
+      estado.style.color = "#ff8f86";
+    });
+  }
+
+  /* ---------- lista e edição ---------- */
+  function listar() {
+    sb.from("portfolio_fotos").select("*").order("destaque", { ascending: false }).order("ordem").order("created_at", { ascending: false })
+      .then(function (r) {
+        var el = $("#lista");
+        if (r.error) { el.innerHTML = '<p class="muted">Não consegui carregar as fotos: ' + esc(r.error.message) + "</p>"; return; }
+        var fotos = r.data || [];
+        $("#total").textContent = fotos.length + (fotos.length === 1 ? " foto" : " fotos");
+        el.innerHTML = fotos.length ? "" : '<p class="muted">Nenhuma foto ainda. Envie as primeiras aí em cima.</p>';
+        fotos.forEach(function (f) { el.appendChild(cartao(f)); });
+      });
+  }
+  function cartao(f) {
+    var d = document.createElement("div");
+    d.className = "foto" + (f.publicado ? "" : " oculta");
+    d.innerHTML =
+      '<div class="img"><img src="' + esc(pub(f.miniatura || f.caminho)) + '" alt="" loading="lazy">' + (f.destaque ? '<span class="selo">Destaque</span>' : "") + "</div>" +
+      '<div class="corpo">' +
+      '<input data-c="titulo" maxlength="120" placeholder="Título" value="' + esc(f.titulo) + '">' +
+      '<input data-c="legenda" maxlength="160" placeholder="Legenda" value="' + esc(f.legenda) + '">' +
+      '<select data-c="categoria">' + Object.keys(CAT).map(function (k) { return '<option value="' + k + '"' + (k === f.categoria ? " selected" : "") + ">" + CAT[k] + "</option>"; }).join("") + "</select>" +
+      '<div class="acoes">' +
+      '<button class="btn peq" data-a="destaque">' + (f.destaque ? "Tirar destaque" : "Destaque") + "</button>" +
+      '<button class="btn peq" data-a="publicado">' + (f.publicado ? "Ocultar" : "Mostrar") + "</button>" +
+      '<button class="btn peq perigo" data-a="apagar">Apagar</button>' +
+      "</div></div>";
+    function salvar(campos) {
+      return sb.from("portfolio_fotos").update(campos).eq("id", f.id).then(function (r) { if (r.error) alert("Não salvou: " + r.error.message); return r; });
+    }
+    d.querySelectorAll("[data-c]").forEach(function (el) {
+      el.addEventListener("change", function () { var o = {}; o[el.dataset.c] = el.value.trim(); salvar(o); });
+    });
+    d.querySelector('[data-a="destaque"]').addEventListener("click", function () { salvar({ destaque: !f.destaque }).then(listar); });
+    d.querySelector('[data-a="publicado"]').addEventListener("click", function () { salvar({ publicado: !f.publicado }).then(listar); });
+    d.querySelector('[data-a="apagar"]').addEventListener("click", function () {
+      if (!confirm("Apagar esta foto do portfólio? Não dá para desfazer.")) return;
+      sb.from("portfolio_fotos").delete().eq("id", f.id).then(function (r) {
+        if (r.error) return alert("Não apagou: " + r.error.message);
+        sb.storage.from(BUCKET).remove([f.caminho, f.miniatura].filter(Boolean)).then(listar);
+      });
+    });
+    return d;
+  }
+})();
+</script>
+</body>
+</html>
