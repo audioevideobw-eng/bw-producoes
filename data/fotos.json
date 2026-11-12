@@ -51,6 +51,210 @@
   ]
  },
  {
+  "id": "novas-2025-10-29",
+  "titulo": "Bastidores · 29 de outubro de 2025",
+  "data": "2025-10-29",
+  "quando": "out/2025",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2025-10-29_bw_01.webp",
+    "mini": "assets/img/portfolio/2025-10-29_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2025-10-29_bw_02.webp",
+    "mini": "assets/img/portfolio/2025-10-29_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ {
+  "id": "novas-2025-10-02",
+  "titulo": "Bastidores · 2 de outubro de 2025",
+  "data": "2025-10-02",
+  "quando": "out/2025",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2025-10-02_bw_01.webp",
+    "mini": "assets/img/portfolio/2025-10-02_bw_01-mini.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ {
+  "id": "novas-2025-09-29",
+  "titulo": "Bastidores · 29 de setembro de 2025",
+  "data": "2025-09-29",
+  "quando": "set/2025",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2025-09-29_bw_01.webp",
+    "mini": "assets/img/portfolio/2025-09-29_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2025-06-04",
+  "titulo": "Bastidores · 4 de junho de 2025",
+  "data": "2025-06-04",
+  "quando": "jun/2025",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2025-06-04_bw_01.webp",
+    "mini": "assets/img/portfolio/2025-06-04_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2025-06-04_bw_02.webp",
+    "mini": "assets/img/portfolio/2025-06-04_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ {
+  "id": "novas-2025-05-07",
+  "titulo": "Bastidores · 7 de maio de 2025",
+  "data": "2025-05-07",
+  "quando": "mai/2025",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2025-05-07_bw_01.webp",
+    "mini": "assets/img/portfolio/2025-05-07_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2024-07-09",
+  "titulo": "Bastidores · 9 de julho de 2024",
+  "data": "2024-07-09",
+  "quando": "jul/2024",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2024-07-09_bw_01.webp",
+    "mini": "assets/img/portfolio/2024-07-09_bw_01-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2024-07-09_bw_02.webp",
+    "mini": "assets/img/portfolio/2024-07-09_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2024-07-09_bw_03.webp",
+    "mini": "assets/img/portfolio/2024-07-09_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2024-07-09_bw_04.webp",
+    "mini": "assets/img/portfolio/2024-07-09_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2024-07-08",
+  "titulo": "Bastidores · 8 de julho de 2024",
+  "data": "2024-07-08",
+  "quando": "jul/2024",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2024-07-08_bw_01.webp",
+    "mini": "assets/img/portfolio/2024-07-08_bw_01-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2024-07-08_bw_02.webp",
+    "mini": "assets/img/portfolio/2024-07-08_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ {
+  "id": "novas-2024-05-14",
+  "titulo": "Bastidores · 14 de maio de 2024",
+  "data": "2024-05-14",
+  "quando": "mai/2024",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2024-05-14_bw_01.webp",
+    "mini": "assets/img/portfolio/2024-05-14_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2024-05-14_bw_02.webp",
+    "mini": "assets/img/portfolio/2024-05-14_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-12-06",
+  "titulo": "Bastidores · 6 de dezembro de 2023",
+  "data": "2023-12-06",
+  "quando": "dez/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-12-06_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-12-06_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-12-06_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-12-06_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-12-06_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-12-06_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-11-08",
+  "titulo": "Bastidores · 8 de novembro de 2023",
+  "data": "2023-11-08",
+  "quando": "nov/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-11-08_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-11-08_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2023-11-06_gravacao-de-equipamento-para-vendas-online",
   "titulo": "Gravação de Equipamento Para Vendas Online",
   "data": "2023-11-06",
@@ -132,6 +336,21 @@
   ]
  },
  {
+  "id": "novas-2023-07-09",
+  "titulo": "Bastidores · 9 de julho de 2023",
+  "data": "2023-07-09",
+  "quando": "jul/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-07-09_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-07-09_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2023-06-29_parabenizo-a-equipe-nota-10-que-atuou-no-vi-e",
   "titulo": "Parabenizo a equipe nota 10 que atuou no VI Encontro PRO-MANANCIAIS. Empenho…",
   "data": "2023-06-29",
@@ -141,6 +360,21 @@
    {
     "src": "assets/img/portfolio/2023-06-29_parabenizo-a-equipe-nota-10-que-atuou-no-vi-e_01.webp",
     "mini": "assets/img/portfolio/2023-06-29_parabenizo-a-equipe-nota-10-que-atuou-no-vi-e_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-29",
+  "titulo": "Bastidores · 29 de junho de 2023",
+  "data": "2023-06-29",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-29_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-29_bw_01-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -162,6 +396,66 @@
   ]
  },
  {
+  "id": "novas-2023-06-28",
+  "titulo": "Bastidores · 28 de junho de 2023",
+  "data": "2023-06-28",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-28_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-28_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-27",
+  "titulo": "Bastidores · 27 de junho de 2023",
+  "data": "2023-06-27",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-27_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-27_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-27_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-27_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-27_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-27_bw_03-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-27_bw_04.webp",
+    "mini": "assets/img/portfolio/2023-06-27_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-27_bw_05.webp",
+    "mini": "assets/img/portfolio/2023-06-27_bw_05-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-27_bw_06.webp",
+    "mini": "assets/img/portfolio/2023-06-27_bw_06-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2023-06-24_equipe-nota-mil-evento-top-na-carman",
   "titulo": "Equipe nota mil - Evento top na Carman @transformandofacescurso",
   "data": "2023-06-24",
@@ -171,6 +465,51 @@
    {
     "src": "assets/img/portfolio/2023-06-24_equipe-nota-mil-evento-top-na-carman_01.webp",
     "mini": "assets/img/portfolio/2023-06-24_equipe-nota-mil-evento-top-na-carman_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-24",
+  "titulo": "Bastidores · 24 de junho de 2023",
+  "data": "2023-06-24",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-24_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-24_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-24_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-24_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-24_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-24_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-24_bw_04.webp",
+    "mini": "assets/img/portfolio/2023-06-24_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-24_bw_05.webp",
+    "mini": "assets/img/portfolio/2023-06-24_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-24_bw_06.webp",
+    "mini": "assets/img/portfolio/2023-06-24_bw_06-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -223,6 +562,147 @@
     "src": "assets/img/portfolio/2023-06-22_xiv-convencao-de-contabilidade-expominas_07.webp",
     "mini": "assets/img/portfolio/2023-06-22_xiv-convencao-de-contabilidade-expominas_07-mini.webp",
     "w": 1080,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-22",
+  "titulo": "Bastidores · 22 de junho de 2023",
+  "data": "2023-06-22",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-22_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-22_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-22_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-22_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-22_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-22_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-22_bw_04.webp",
+    "mini": "assets/img/portfolio/2023-06-22_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-22_bw_05.webp",
+    "mini": "assets/img/portfolio/2023-06-22_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-21",
+  "titulo": "Bastidores · 21 de junho de 2023",
+  "data": "2023-06-21",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-21_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-21_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-21_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-21_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-21_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-21_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-21_bw_04.webp",
+    "mini": "assets/img/portfolio/2023-06-21_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-21_bw_05.webp",
+    "mini": "assets/img/portfolio/2023-06-21_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-20",
+  "titulo": "Bastidores · 20 de junho de 2023",
+  "data": "2023-06-20",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_04.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_05.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_06.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_06-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_07.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_07-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_08.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_08-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-20_bw_09.webp",
+    "mini": "assets/img/portfolio/2023-06-20_bw_09-mini.webp",
+    "w": 1920,
     "h": 1080
    }
   ]
@@ -298,6 +778,84 @@
   "data_post": "2023-06-21"
  },
  {
+  "id": "novas-2023-06-19",
+  "titulo": "Bastidores · 19 de junho de 2023",
+  "data": "2023-06-19",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_01-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_04.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_05.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_05-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_06.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_06-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_07.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_07-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_08.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_08-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-19_bw_09.webp",
+    "mini": "assets/img/portfolio/2023-06-19_bw_09-mini.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-17",
+  "titulo": "Bastidores · 17 de junho de 2023",
+  "data": "2023-06-17",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-17_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-17_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2023-06-15_evento-sicoob-hotel-ouro-minas-gravacao-e-edi",
   "titulo": "Evento Sicoob - Hotel Ouro Minas - Gravação e edição de palestras",
   "data": "2023-06-15",
@@ -313,6 +871,60 @@
   ]
  },
  {
+  "id": "novas-2023-06-15",
+  "titulo": "Bastidores · 15 de junho de 2023",
+  "data": "2023-06-15",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-15_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-15_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-15_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-15_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-15_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-15_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-12",
+  "titulo": "Bastidores · 12 de junho de 2023",
+  "data": "2023-06-12",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-12_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-12_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-12_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-12_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-12_bw_03.webp",
+    "mini": "assets/img/portfolio/2023-06-12_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2023-06-09_treinamento-de-supervisores-da-empresa-vli-at",
   "titulo": "Treinamento de Supervisores da Empresa VLI - Atuamos como técnico de áudio e…",
   "data": "2023-06-09",
@@ -322,6 +934,27 @@
    {
     "src": "assets/img/portfolio/2023-06-09_treinamento-de-supervisores-da-empresa-vli-at_01.webp",
     "mini": "assets/img/portfolio/2023-06-09_treinamento-de-supervisores-da-empresa-vli-at_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2023-06-06",
+  "titulo": "Bastidores · 6 de junho de 2023",
+  "data": "2023-06-06",
+  "quando": "jun/2023",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2023-06-06_bw_01.webp",
+    "mini": "assets/img/portfolio/2023-06-06_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2023-06-06_bw_02.webp",
+    "mini": "assets/img/portfolio/2023-06-06_bw_02-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -445,6 +1078,39 @@
   ]
  },
  {
+  "id": "novas-2022-12-16",
+  "titulo": "Bastidores · 16 de dezembro de 2022",
+  "data": "2022-12-16",
+  "quando": "dez/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-12-16_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-12-16_bw_01-mini.webp",
+    "w": 1080,
+    "h": 1920
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-16_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-12-16_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-16_bw_03.webp",
+    "mini": "assets/img/portfolio/2022-12-16_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-16_bw_04.webp",
+    "mini": "assets/img/portfolio/2022-12-16_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2022-12-12_so-profissional-equipe-top",
   "titulo": "Só profissional! Equipe top",
   "data": "2022-12-12",
@@ -471,6 +1137,21 @@
     "mini": "assets/img/portfolio/2022-12-12_chefa-e-chefa-pai_01-mini.webp",
     "w": 1080,
     "h": 1350
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-12-12",
+  "titulo": "Bastidores · 12 de dezembro de 2022",
+  "data": "2022-12-12",
+  "quando": "dez/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-12-12_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-12-12_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
    }
   ]
  },
@@ -526,6 +1207,105 @@
   ]
  },
  {
+  "id": "novas-2022-12-02",
+  "titulo": "Bastidores · 2 de dezembro de 2022",
+  "data": "2022-12-02",
+  "quando": "dez/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_03.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_04.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_05.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_05-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_06.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_06-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_07.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_07-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-12-02_bw_08.webp",
+    "mini": "assets/img/portfolio/2022-12-02_bw_08-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-11-30",
+  "titulo": "Bastidores · 30 de novembro de 2022",
+  "data": "2022-11-30",
+  "quando": "nov/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-11-30_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-11-30_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-11-30_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-11-30_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-11-20",
+  "titulo": "Bastidores · 20 de novembro de 2022",
+  "data": "2022-11-20",
+  "quando": "nov/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-11-20_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-11-20_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-11-20_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-11-20_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2022-11-18_equipe-sic-exp-cafe",
   "titulo": "Equipe SIC Exp Café",
   "data": "2022-11-18",
@@ -541,6 +1321,249 @@
   ]
  },
  {
+  "id": "novas-2022-11-16",
+  "titulo": "Bastidores · 16 de novembro de 2022",
+  "data": "2022-11-16",
+  "quando": "nov/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-11-16_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-11-16_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-11-16_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-11-16_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-11-16_bw_03.webp",
+    "mini": "assets/img/portfolio/2022-11-16_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-11-11",
+  "titulo": "Bastidores · 11 de novembro de 2022",
+  "data": "2022-11-11",
+  "quando": "nov/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-11-11_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-11-11_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-11-11_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-11-11_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-10-28",
+  "titulo": "Bastidores · 28 de outubro de 2022",
+  "data": "2022-10-28",
+  "quando": "out/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-10-28_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-10-28_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-10-28_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-10-28_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-10-18",
+  "titulo": "Bastidores · 18 de outubro de 2022",
+  "data": "2022-10-18",
+  "quando": "out/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-10-18_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-10-18_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-10-18_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-10-18_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-10-18_bw_03.webp",
+    "mini": "assets/img/portfolio/2022-10-18_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-10-18_bw_04.webp",
+    "mini": "assets/img/portfolio/2022-10-18_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-09-15",
+  "titulo": "Bastidores · 15 de setembro de 2022",
+  "data": "2022-09-15",
+  "quando": "set/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-09-15_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-09-15_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-09-15_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-09-15_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-09-01",
+  "titulo": "Bastidores · 1 de setembro de 2022",
+  "data": "2022-09-01",
+  "quando": "set/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-09-01_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-09-01_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-08-19",
+  "titulo": "Bastidores · 19 de agosto de 2022",
+  "data": "2022-08-19",
+  "quando": "ago/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-08-19_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-08-19_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-07-23",
+  "titulo": "Bastidores · 23 de julho de 2022",
+  "data": "2022-07-23",
+  "quando": "jul/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-07-23_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-07-23_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-06-09",
+  "titulo": "Bastidores · 9 de junho de 2022",
+  "data": "2022-06-09",
+  "quando": "jun/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-06-09_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-06-09_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-06-09_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-06-09_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-04-22",
+  "titulo": "Bastidores · 22 de abril de 2022",
+  "data": "2022-04-22",
+  "quando": "abr/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-04-22_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-04-22_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2022-03-21",
+  "titulo": "Bastidores · 21 de março de 2022",
+  "data": "2022-03-21",
+  "quando": "mar/2022",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2022-03-21_bw_01.webp",
+    "mini": "assets/img/portfolio/2022-03-21_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-03-21_bw_02.webp",
+    "mini": "assets/img/portfolio/2022-03-21_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-03-21_bw_03.webp",
+    "mini": "assets/img/portfolio/2022-03-21_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-03-21_bw_04.webp",
+    "mini": "assets/img/portfolio/2022-03-21_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2022-03-21_bw_05.webp",
+    "mini": "assets/img/portfolio/2022-03-21_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2021-12-18_a-familia-da-escolinha-na-tv-pessoas-especiai",
   "titulo": "A família da escolinha na TV! Pessoas especiais e com muito talento. Deus…",
   "data": "2021-12-18",
@@ -550,6 +1573,69 @@
    {
     "src": "assets/img/portfolio/2021-12-18_a-familia-da-escolinha-na-tv-pessoas-especiai_01.webp",
     "mini": "assets/img/portfolio/2021-12-18_a-familia-da-escolinha-na-tv-pessoas-especiai_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-12-03",
+  "titulo": "Bastidores · 3 de dezembro de 2021",
+  "data": "2021-12-03",
+  "quando": "dez/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-12-03_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-12-03_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-11-24",
+  "titulo": "Bastidores · 24 de novembro de 2021",
+  "data": "2021-11-24",
+  "quando": "nov/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-11-24_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-11-24_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-11-24_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-11-24_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-11-24_bw_03.webp",
+    "mini": "assets/img/portfolio/2021-11-24_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-11-23",
+  "titulo": "Bastidores · 23 de novembro de 2021",
+  "data": "2021-11-23",
+  "quando": "nov/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-11-23_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-11-23_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-11-23_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-11-23_bw_02-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -694,6 +1780,144 @@
   ]
  },
  {
+  "id": "novas-2021-10-08",
+  "titulo": "Bastidores · 8 de outubro de 2021",
+  "data": "2021-10-08",
+  "quando": "out/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-10-08_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-10-08_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-10-08_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-10-08_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-10-08_bw_03.webp",
+    "mini": "assets/img/portfolio/2021-10-08_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-10-08_bw_04.webp",
+    "mini": "assets/img/portfolio/2021-10-08_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-09-16",
+  "titulo": "Bastidores · 16 de setembro de 2021",
+  "data": "2021-09-16",
+  "quando": "set/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-09-16_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-09-16_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-16_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-09-16_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-16_bw_03.webp",
+    "mini": "assets/img/portfolio/2021-09-16_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-16_bw_04.webp",
+    "mini": "assets/img/portfolio/2021-09-16_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-16_bw_05.webp",
+    "mini": "assets/img/portfolio/2021-09-16_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-09-15",
+  "titulo": "Bastidores · 15 de setembro de 2021",
+  "data": "2021-09-15",
+  "quando": "set/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-09-15_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-09-15_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-15_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-09-15_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-15_bw_03.webp",
+    "mini": "assets/img/portfolio/2021-09-15_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-09-15_bw_04.webp",
+    "mini": "assets/img/portfolio/2021-09-15_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-05-23",
+  "titulo": "Bastidores · 23 de maio de 2021",
+  "data": "2021-05-23",
+  "quando": "mai/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-05-23_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-05-23_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-05-23_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-05-23_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-05-23_bw_03.webp",
+    "mini": "assets/img/portfolio/2021-05-23_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-05-23_bw_04.webp",
+    "mini": "assets/img/portfolio/2021-05-23_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2021-04-24_tive-a-oportunidade-de-trabalhar-com-o-otimo",
   "titulo": "Tive a oportunidade de trabalhar com o @zacagalo . Ótimo artista/humorista.…",
   "data": "2021-04-24",
@@ -709,6 +1933,21 @@
   ]
  },
  {
+  "id": "novas-2021-04-03",
+  "titulo": "Bastidores · 3 de abril de 2021",
+  "data": "2021-04-03",
+  "quando": "abr/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-04-03_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-04-03_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2021-04-02_otima-pessoa-dentro-e-fora-das-telinhas",
   "titulo": "Ótima pessoa dentro e fora das telinhas. @vovoplacidina",
   "data": "2021-04-02",
@@ -718,6 +1957,21 @@
    {
     "src": "assets/img/portfolio/2021-04-02_otima-pessoa-dentro-e-fora-das-telinhas_01.webp",
     "mini": "assets/img/portfolio/2021-04-02_otima-pessoa-dentro-e-fora-das-telinhas_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-04-02",
+  "titulo": "Bastidores · 2 de abril de 2021",
+  "data": "2021-04-02",
+  "quando": "abr/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-04-02_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-04-02_bw_01-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -745,6 +1999,33 @@
    {
     "src": "assets/img/portfolio/2021-02-05_tivemos-a-honra-de-conhecer-o-humorista-e-pal_03.webp",
     "mini": "assets/img/portfolio/2021-02-05_tivemos-a-honra-de-conhecer-o-humorista-e-pal_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-02-05",
+  "titulo": "Bastidores · 5 de fevereiro de 2021",
+  "data": "2021-02-05",
+  "quando": "fev/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-02-05_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-02-05_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-02-05_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-02-05_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-02-05_bw_03.webp",
+    "mini": "assets/img/portfolio/2021-02-05_bw_03-mini.webp",
     "w": 1920,
     "h": 1080
    }
@@ -783,6 +2064,57 @@
     "mini": "assets/img/portfolio/2021-02-03_a-bw-tem-a-honra-de-esta-participando-do-proj_01-mini.webp",
     "w": 1920,
     "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-02-03",
+  "titulo": "Bastidores · 3 de fevereiro de 2021",
+  "data": "2021-02-03",
+  "quando": "fev/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-02-03_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-02-03_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-01-25",
+  "titulo": "Bastidores · 25 de janeiro de 2021",
+  "data": "2021-01-25",
+  "quando": "jan/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-01-25_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-01-25_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2021-01-24",
+  "titulo": "Bastidores · 24 de janeiro de 2021",
+  "data": "2021-01-24",
+  "quando": "jan/2021",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-01-24_bw_01.webp",
+    "mini": "assets/img/portfolio/2021-01-24_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-01-24_bw_02.webp",
+    "mini": "assets/img/portfolio/2021-01-24_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
    }
   ]
  },
@@ -854,6 +2186,69 @@
   "data_post": "2021-01-06"
  },
  {
+  "id": "novas-2020-12-18",
+  "titulo": "Bastidores · 18 de dezembro de 2020",
+  "data": "2020-12-18",
+  "quando": "dez/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-12-18_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-12-18_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-12-17",
+  "titulo": "Bastidores · 17 de dezembro de 2020",
+  "data": "2020-12-17",
+  "quando": "dez/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-12-17_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-12-17_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-12-17_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-12-17_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-12-17_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-12-17_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-11-16",
+  "titulo": "Bastidores · 16 de novembro de 2020",
+  "data": "2020-11-16",
+  "quando": "nov/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-11-16_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-11-16_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-11-16_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-11-16_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-26_live-realizada-no-dia-25-10-com-o-parceiro-me",
   "titulo": "Live realizada no dia 25/10 com o parceiro Messias do Som. Agradecemos ao…",
   "data": "2020-10-25",
@@ -900,6 +2295,39 @@
   "data_post": "2020-10-26"
  },
  {
+  "id": "novas-2020-10-25",
+  "titulo": "Bastidores · 25 de outubro de 2020",
+  "data": "2020-10-25",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-25_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-25_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-25_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-10-25_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-25_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-10-25_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-25_bw_04.webp",
+    "mini": "assets/img/portfolio/2020-10-25_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-23_evento-o-grande-encontro-2020-trabalhamos-com",
   "titulo": "Evento (O Grande Encontro 2020). Trabalhamos como parceiro da empresa…",
   "data": "2020-10-23",
@@ -933,6 +2361,81 @@
   ]
  },
  {
+  "id": "novas-2020-10-22",
+  "titulo": "Bastidores · 22 de outubro de 2020",
+  "data": "2020-10-22",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-22_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-22_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-10-21",
+  "titulo": "Bastidores · 21 de outubro de 2020",
+  "data": "2020-10-21",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-21_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-21_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-10-20",
+  "titulo": "Bastidores · 20 de outubro de 2020",
+  "data": "2020-10-20",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-20_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-20_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-20_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-10-20_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-20_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-10-20_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-20_bw_04.webp",
+    "mini": "assets/img/portfolio/2020-10-20_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-20_bw_05.webp",
+    "mini": "assets/img/portfolio/2020-10-20_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-20_bw_06.webp",
+    "mini": "assets/img/portfolio/2020-10-20_bw_06-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-19_live-finalizada-agradecemos-ao-pela-preferenc",
   "titulo": "Live finalizada. Agradecemos ao @leocostta1 pela preferência. Tmj!",
   "data": "2020-10-19",
@@ -955,6 +2458,33 @@
     "src": "assets/img/portfolio/2020-10-19_live-finalizada-agradecemos-ao-pela-preferenc_03.webp",
     "mini": "assets/img/portfolio/2020-10-19_live-finalizada-agradecemos-ao-pela-preferenc_03-mini.webp",
     "w": 1080,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-10-19",
+  "titulo": "Bastidores · 19 de outubro de 2020",
+  "data": "2020-10-19",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-19_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-19_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-19_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-10-19_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-19_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-10-19_bw_03-mini.webp",
+    "w": 1920,
     "h": 1080
    }
   ]
@@ -1053,6 +2583,21 @@
   ]
  },
  {
+  "id": "novas-2020-10-08",
+  "titulo": "Bastidores · 8 de outubro de 2020",
+  "data": "2020-10-08",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-08_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-08_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-07_live-de-hoje-continuando-o-trabalho-do-mais-u",
   "titulo": "Live de hoje! Continuando o trabalho do @tuliocotta. Mais uma vez…",
   "data": "2020-10-07",
@@ -1113,6 +2658,42 @@
   ]
  },
  {
+  "id": "novas-2020-10-07",
+  "titulo": "Bastidores · 7 de outubro de 2020",
+  "data": "2020-10-07",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-07_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-07_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-10-06",
+  "titulo": "Bastidores · 6 de outubro de 2020",
+  "data": "2020-10-06",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-06_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-06_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-06_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-10-06_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-05_mais-uma-live-com-agradecemos-a-preferencia",
   "titulo": "Mais uma Live com @tuliocotta . Agradecemos a preferência.",
   "data": "2020-10-05",
@@ -1167,6 +2748,39 @@
   ]
  },
  {
+  "id": "novas-2020-10-04",
+  "titulo": "Bastidores · 4 de outubro de 2020",
+  "data": "2020-10-04",
+  "quando": "out/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-04_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-10-04_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-04_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-10-04_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-04_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-10-04_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-04_bw_04.webp",
+    "mini": "assets/img/portfolio/2020-10-04_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-01_live-25-09-20",
   "titulo": "Live 25-09-20",
   "data": "2020-09-25",
@@ -1193,6 +2807,33 @@
    }
   ],
   "data_post": "2020-10-01"
+ },
+ {
+  "id": "novas-2020-09-25",
+  "titulo": "Bastidores · 25 de setembro de 2020",
+  "data": "2020-09-25",
+  "quando": "set/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-09-25_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-09-25_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-09-25_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-09-25_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-09-25_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-09-25_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
  },
  {
   "id": "2020-10-01_live-grupo-tradicao-30-08-20",
@@ -1239,6 +2880,21 @@
   "data_post": "2020-10-01"
  },
  {
+  "id": "novas-2020-08-13",
+  "titulo": "Bastidores · 13 de agosto de 2020",
+  "data": "2020-08-13",
+  "quando": "ago/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-08-13_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-08-13_bw_01-mini.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ]
+ },
+ {
   "id": "2020-10-01_live-caipira-do-core-11-07-20",
   "titulo": "Live Caipira do Core - 11-07-20",
   "data": "2020-07-11",
@@ -1253,6 +2909,33 @@
    }
   ],
   "data_post": "2020-10-01"
+ },
+ {
+  "id": "novas-2020-07-11",
+  "titulo": "Bastidores · 11 de julho de 2020",
+  "data": "2020-07-11",
+  "quando": "jul/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-07-11_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-07-11_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-11_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-07-11_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-11_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-07-11_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
  },
  {
   "id": "2020-10-01_live-escolinha-na-tv-10-07-20",
@@ -1317,6 +3000,66 @@
   "data_post": "2020-10-01"
  },
  {
+  "id": "novas-2020-07-08",
+  "titulo": "Bastidores · 8 de julho de 2020",
+  "data": "2020-07-08",
+  "quando": "jul/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-07-08_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-07-08_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-08_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-07-08_bw_02-mini.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-08_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-07-08_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-08_bw_04.webp",
+    "mini": "assets/img/portfolio/2020-07-08_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-08_bw_05.webp",
+    "mini": "assets/img/portfolio/2020-07-08_bw_05-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
+  "id": "novas-2020-07-07",
+  "titulo": "Bastidores · 7 de julho de 2020",
+  "data": "2020-07-07",
+  "quando": "jul/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-07-07_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-07-07_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-07-07_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-07-07_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
+ },
+ {
   "id": "2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr",
   "titulo": "Live de Cerimônia de Diplomação e posse do Grão-Mestrado - 24-06-20",
   "data": "2020-06-24",
@@ -1337,6 +3080,39 @@
    }
   ],
   "data_post": "2020-10-01"
+ },
+ {
+  "id": "novas-2020-06-24",
+  "titulo": "Bastidores · 24 de junho de 2020",
+  "data": "2020-06-24",
+  "quando": "jun/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-06-24_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-06-24_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-06-24_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-06-24_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-06-24_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-06-24_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-06-24_bw_04.webp",
+    "mini": "assets/img/portfolio/2020-06-24_bw_04-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
  },
  {
   "id": "2020-10-01_live-do-colegio-batista-22-06-20",
@@ -1371,6 +3147,33 @@
    }
   ],
   "data_post": "2020-10-01"
+ },
+ {
+  "id": "novas-2020-06-22",
+  "titulo": "Bastidores · 22 de junho de 2020",
+  "data": "2020-06-22",
+  "quando": "jun/2020",
+  "legenda": "",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-06-22_bw_01.webp",
+    "mini": "assets/img/portfolio/2020-06-22_bw_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-06-22_bw_02.webp",
+    "mini": "assets/img/portfolio/2020-06-22_bw_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-06-22_bw_03.webp",
+    "mini": "assets/img/portfolio/2020-06-22_bw_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ]
  },
  {
   "id": "2020-10-01_live-grupo-som-da-batucada-21-06-20",
