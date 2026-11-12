@@ -6,13 +6,13 @@
 window.BW_CONFIG = {
 
   /* ---- Contatos (aparecem no rodapé, no Contato e no botão do WhatsApp) ---- */
-  whatsapp: "",                 // só números com DDI e DDD. Ex.: "5531999999999"
-  whatsapp_label: "",           // como aparece escrito. Ex.: "(31) 99999-9999"
+  whatsapp: "5531996983721",                 // só números com DDI e DDD. Ex.: "5531999999999"
+  whatsapp_label: "(31) 99698-3721",           // como aparece escrito. Ex.: "(31) 99999-9999"
   whatsapp_msg: "Olá! Vim pelo site da BW Produções e quero um orçamento.",
-  email: "",                    // ex.: "contato@bwproducoes.com.br"
-  instagram: "",                // usuário sem @. Ex.: "bwproducoes"
+  email: "audioevideobw@gmail.com",                    // ex.: "contato@bwproducoes.com.br"
+  instagram: "audioevideobw",                // usuário sem @. Ex.: "bwproducoes"
   youtube: "",                  // link do canal. Ex.: "https://youtube.com/@bwproducoes"
-  regiao: "",                   // ex.: "Belo Horizonte e região"
+  regiao: "Belo Horizonte, região metropolitana e Minas Gerais",                   // ex.: "Belo Horizonte e região"
   horario: "",                  // ex.: "Seg. a sex., 9h às 18h · eventos em qualquer dia"
   mapa_embed_url: "",           // Google Maps > Compartilhar > Incorporar mapa > copie só o link do src
 
