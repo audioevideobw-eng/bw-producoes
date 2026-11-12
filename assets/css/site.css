@@ -83,3 +83,6 @@ button[disabled]{opacity:.6;cursor:wait}
   transform:scale(1.08);transition:transform 1.2s ease}
 .bw-hero-art:hover img{transform:scale(1.11)}
 @media(max-width:900px){.bw-hero-art{flex-basis:100%;max-width:100%;margin-top:-8px}.bw-hero-art img{transform:none}}
+
+/* Versão maior do botão "Pedir orçamento" (abertura e chamadas) */
+.bw-cta-lg{min-height:48px;padding:0 26px;font-size:13px}
