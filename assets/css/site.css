@@ -133,3 +133,18 @@ button[disabled]{opacity:.6;cursor:wait}
 #showreel > div,#showreel > span{z-index:1}
 
 #pf-more[hidden]{display:none!important}
+
+/* Fotos com moldura: mostrar inteiras no card */
+.pf-foto .pf-cover{background:#000}
+.pf-foto .pf-cover img{object-fit:contain}
+.pf-foto .pf-cover:hover img{transform:scale(1.02)}
+/* Legenda da galeria */
+.player-box{max-height:94vh;display:flex;flex-direction:column}
+.player-frame.foto{height:min(70vh,calc(100vw*.6))}
+.gal-legenda{margin-top:14px;max-height:20vh;overflow:auto;color:#D6D3CD;font-size:14.5px;line-height:1.6}
+.gal-legenda[hidden]{display:none}
+.gal-topo{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;align-items:baseline}
+.gal-topo strong{font-family:Montserrat,sans-serif;font-size:17px;color:#FAF9F7}
+.gal-topo span{color:#857B40;font-size:13px;font-weight:600}
+.gal-legenda p{margin:8px 0 0;white-space:pre-line}
+.player{background:rgba(3,3,3,.97)}

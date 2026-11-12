@@ -117,6 +117,7 @@
     frame.innerHTML = "";
     frame.classList.remove("foto");
     galeria.lista = [];
+    var gl = $(".gal-legenda", player); if (gl) gl.hidden = true;
     frame.classList.toggle("vertical", !!e.vertical);
     var el;
     if (e.src) {
@@ -142,6 +143,7 @@
   function fecharPlayer() {
     if (!player || player.hidden) return;
     $(".player-frame", player).innerHTML = "";
+    var gl = $(".gal-legenda", player); if (gl) gl.hidden = true;
     player.hidden = true;
     document.body.style.overflow = "";
     if (ultimoFoco) ultimoFoco.focus();
@@ -198,19 +200,31 @@
       }).catch(function () { return []; });
   }
   function carregarFotos() {
-    return esperarSupabase(4000).then(function () {
+    // 1) álbuns fixos do site (fotos do Instagram com moldura) — data/fotos.json
+    var fixos = fetch("data/fotos.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (lista) {
+        return (lista || []).filter(function (a) { return a.fotos && a.fotos.length; }).map(function (a) {
+          return { tipo: "foto", titulo: a.titulo, legenda: a.quando + (a.fotos.length > 1 ? " · " + a.fotos.length + " fotos" : ""),
+            texto: a.legenda || "", capa: a.fotos[0].mini, data: a.data || "",
+            fotos: a.fotos.map(function (f) { return { grande: f.src, capa: f.mini }; }) };
+        });
+      }).catch(function () { return []; });
+    // 2) fotos enviadas pelo painel (Supabase)
+    var painel = esperarSupabase(4000).then(function () {
       var sb = supa();
       if (!sb) return [];
-      return sb.from("portfolio_fotos").select("id,titulo,legenda,categoria,caminho,miniatura,largura,altura,destaque,ordem,created_at")
+      return sb.from("portfolio_fotos").select("id,titulo,legenda,categoria,caminho,miniatura,destaque,ordem,created_at")
         .eq("publicado", true).order("destaque", { ascending: false }).order("ordem", { ascending: true }).order("created_at", { ascending: false })
         .then(function (r) {
           if (r.error) return [];
           return (r.data || []).map(function (f) {
+            var g = urlStorage(f.caminho), m = urlStorage(f.miniatura || f.caminho);
             return { tipo: "foto", titulo: f.titulo || CATEGORIA[f.categoria] || "Fotografia", legenda: f.legenda || CATEGORIA[f.categoria] || "",
-              capa: urlStorage(f.miniatura || f.caminho), grande: urlStorage(f.caminho), destaque: f.destaque, data: f.created_at || "" };
+              texto: "", capa: m, data: f.created_at || "", destaque: f.destaque, fotos: [{ grande: g, capa: m }] };
           });
         });
     }).catch(function () { return []; });
+    return Promise.all([painel, fixos]).then(function (r) { return r[0].concat(r[1]); });
   }
   function intercalar(a, b) {
     var out = [], i = 0;
@@ -245,13 +259,18 @@
   }
 
   /* Galeria de fotos (tela cheia, com anterior/próxima) */
-  var galeria = { lista: [], i: 0 };
+  var galeria = { lista: [], i: 0, album: null };
   function mostrarFoto() {
-    var f = galeria.lista[galeria.i];
+    var f = galeria.lista[galeria.i], al = galeria.album || {};
     var frame = $(".player-frame", player);
-    frame.innerHTML = '<img src="' + esc(f.grande || f.capa) + '" alt="' + esc(f.titulo) + '">' +
-      (galeria.lista.length > 1 ? '<button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button><button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>' : "") +
-      '<span class="gal-cap">' + esc(f.titulo) + (f.legenda ? " · " + esc(f.legenda) : "") + '<b>' + (galeria.i + 1) + " / " + galeria.lista.length + "</b></span>";
+    frame.innerHTML = '<img src="' + esc(f.grande || f.capa) + '" alt="' + esc(al.titulo || "") + '">' +
+      (galeria.lista.length > 1 ? '<button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button><button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>' : "");
+    var cap = $(".gal-legenda", player);
+    if (!cap) { cap = document.createElement("div"); cap.className = "gal-legenda"; $(".player-box", player).appendChild(cap); }
+    cap.hidden = false;
+    cap.innerHTML = '<div class="gal-topo"><strong>' + esc(al.titulo || "") + '</strong><span>' + esc(al.legenda ? al.legenda.split(" · ")[0] : "") +
+      (galeria.lista.length > 1 ? " · " + (galeria.i + 1) + "/" + galeria.lista.length : "") + "</span></div>" +
+      (al.texto && al.texto !== al.titulo ? '<p>' + esc(al.texto) + "</p>" : "");
     var pv = $(".gal-prev", frame), nx = $(".gal-next", frame);
     if (pv) pv.addEventListener("click", function (e) { e.stopPropagation(); passoFoto(-1); });
     if (nx) nx.addEventListener("click", function (e) { e.stopPropagation(); passoFoto(1); });
@@ -261,10 +280,10 @@
     galeria.i = (galeria.i + d + galeria.lista.length) % galeria.lista.length;
     mostrarFoto();
   }
-  function abrirGaleria(lista, i) {
+  function abrirGaleria(album, i) {
     player = player || $("#player");
     if (!player) return;
-    galeria.lista = lista; galeria.i = i;
+    galeria.album = album; galeria.lista = album.fotos; galeria.i = i || 0;
     var frame = $(".player-frame", player);
     frame.classList.remove("vertical");
     frame.classList.add("foto");
@@ -273,7 +292,7 @@
     player.hidden = false;
     document.body.style.overflow = "hidden";
     $(".player-close", player).focus();
-    track("ver_foto", { titulo: lista[i].titulo });
+    track("ver_foto", { titulo: album.titulo });
   }
   document.addEventListener("keydown", function (ev) {
     if (!player || player.hidden || !galeria.lista.length || !$(".player-frame.foto", player)) return;
@@ -315,7 +334,7 @@
       lista.slice(0, limite).forEach(function (p) {
         grid.appendChild(card(p, function () {
           if (p.tipo === "video") abrirPlayer(p.url, p.titulo);
-          else abrirGaleria(fotos, fotos.indexOf(p));
+          else abrirGaleria(p, 0);
         }));
       });
       if (!lista.length) grid.innerHTML = '<p class="pf-empty">' + (filtro === "foto" ? "Em breve, novas fotografias por aqui." : filtro === "video" ? "Em breve, novos vídeos por aqui." : "Em breve, novos trabalhos por aqui.") + "</p>";
