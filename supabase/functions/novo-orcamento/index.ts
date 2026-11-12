@@ -8,8 +8,13 @@
 //
 // Segredos (Supabase > Edge Functions > Secrets):
 //   WEBHOOK_SECRET      senha que o webhook envia no cabeçalho x-webhook-secret
-//   RESEND_API_KEY      chave da Resend (resend.com)
-//   EMAIL_FROM          remetente verificado. Ex.: "BW Produções <contato@bwproducoes.com.br>"
+//   E-MAIL — use UMA das opções:
+//   a) Gmail (sem domínio próprio):
+//      GMAIL_USER          ex.: audioevideobw@gmail.com
+//      GMAIL_APP_PASSWORD  senha de app de 16 letras (Conta Google > Segurança > Senhas de app)
+//   b) Resend (com domínio próprio verificado):
+//      RESEND_API_KEY      chave da Resend (resend.com)
+//      EMAIL_FROM          remetente verificado. Ex.: "BW Produções <contato@bwproducoes.com.br>"
 //   EMAIL_DONO          seu e-mail, para receber os pedidos
 //   NTFY_TOPIC          (opcional) tópico do app ntfy. Ex.: "bw-orcamentos-8f3k2"
 //   CALLMEBOT_PHONE     (opcional) seu WhatsApp com DDI. Ex.: "5531999999999"
@@ -19,6 +24,7 @@
 // SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY já existem automaticamente.
 // =====================================================================
 import { createClient } from "jsr:@supabase/supabase-js@2";
+import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
 
 type Pedido = {
   id: string; created_at: string; nome: string; email: string; whatsapp?: string;
@@ -31,14 +37,25 @@ const dataBR = (d?: string | null) => (d ? d.split("-").reverse().join("/") : "a
 const soNumeros = (s?: string) => String(s ?? "").replace(/\D/g, "");
 
 async function enviarEmail(para: string, assunto: string, html: string, responderPara?: string) {
+  if (!para) return "pulado";
+  const gUser = env("GMAIL_USER"), gPass = env("GMAIL_APP_PASSWORD").replace(/\s/g, "");
+  if (gUser && gPass) {
+    const smtp = new SMTPClient({ connection: { hostname: "smtp.gmail.com", port: 465, tls: true, auth: { username: gUser, password: gPass } } });
+    try {
+      await smtp.send({ from: `BW Produções <${gUser}>`, to: para, subject: assunto, html, content: "auto", ...(responderPara ? { replyTo: responderPara } : {}) });
+      return "ok (gmail)";
+    } finally {
+      await smtp.close();
+    }
+  }
   const key = env("RESEND_API_KEY"), from = env("EMAIL_FROM");
-  if (!key || !from || !para) return "pulado";
+  if (!key || !from) return "pulado";
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({ from, to: [para], subject: assunto, html, ...(responderPara ? { reply_to: responderPara } : {}) }),
   });
-  return r.ok ? "ok" : `erro ${r.status}: ${await r.text()}`;
+  return r.ok ? "ok (resend)" : `erro ${r.status}: ${await r.text()}`;
 }
 
 async function avisarCelular(p: Pedido) {
@@ -110,11 +127,9 @@ Deno.serve(async (req) => {
   const p: Pedido | undefined = corpo?.record;
   if (!p?.id || corpo?.type !== "INSERT" || corpo?.table !== "orcamentos") return new Response("ignorado", { status: 200 });
 
-  const [celular, dono, cliente] = await Promise.all([
-    avisarCelular(p).catch((e) => `erro ${e}`),
-    enviarEmail(env("EMAIL_DONO"), `Novo orçamento: ${p.nome} — ${p.tipo ?? ""}`, emailDono(p), p.email).catch((e) => `erro ${e}`),
-    enviarEmail(p.email, "Recebemos seu pedido — BW Produções", emailCliente(p), env("EMAIL_DONO") || undefined).catch((e) => `erro ${e}`),
-  ]);
+  const celular = await avisarCelular(p).catch((e) => `erro ${e}`);
+  const dono = await enviarEmail(env("EMAIL_DONO"), `Novo orçamento: ${p.nome} — ${p.tipo ?? ""}`, emailDono(p), p.email).catch((e) => `erro ${e}`);
+  const cliente = await enviarEmail(p.email, "Recebemos seu pedido — BW Produções", emailCliente(p), env("EMAIL_DONO") || undefined).catch((e) => `erro ${e}`);
 
   const sb = createClient(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY"));
   await sb.from("orcamentos").update({ notificado: true }).eq("id", p.id);
