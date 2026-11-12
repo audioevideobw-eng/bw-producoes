@@ -230,7 +230,7 @@
  {
   "id": "2023-06-21_evento-realizado-de-19-a-20-de-junho-de-2023",
   "titulo": "Evento realizado de 19 a 20 de junho de 2023. Foram dois dias de montagem e…",
-  "data": "2023-06-21",
+  "data": "2023-06-19",
   "quando": "jun/2023",
   "legenda": "Evento realizado de 19 a 20 de junho de 2023. Foram dois dias de montagem e muita tecnologia envolvida. A BW Produções ficou responsável pela transmissão do evento nos telões de Led e gravação na íntegra de todo evento. Agradecemos o empenho da equipe e aguardamos o próximo! @arteeventosbh Obrigado pela oportunidade!",
   "fotos": [
@@ -294,7 +294,8 @@
     "w": 1080,
     "h": 1080
    }
-  ]
+  ],
+  "data_post": "2023-06-21"
  },
  {
   "id": "2023-06-15_evento-sicoob-hotel-ouro-minas-gravacao-e-edi",
@@ -786,33 +787,6 @@
   ]
  },
  {
-  "id": "2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba",
-  "titulo": "Live realizada no dia 22 DEZ 20, no Colégio Batista Mineiro.",
-  "data": "2021-01-06",
-  "quando": "jan/2021",
-  "legenda": "Live realizada no dia 22 DEZ 20, no Colégio Batista Mineiro.",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_01.webp",
-    "mini": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_01-mini.webp",
-    "w": 1080,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_02.webp",
-    "mini": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_02-mini.webp",
-    "w": 1080,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_03.webp",
-    "mini": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_03-mini.webp",
-    "w": 1080,
-    "h": 1080
-   }
-  ]
- },
- {
   "id": "2021-01-06_grande-evento-realizado-no-marcure-hotel-fomo",
   "titulo": "Grande evento realizado no Marcure Hotel. Fomos parceiros da empresa …",
   "data": "2021-01-06",
@@ -852,9 +826,37 @@
   ]
  },
  {
+  "id": "2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba",
+  "titulo": "Live realizada no dia 22 DEZ 20, no Colégio Batista Mineiro.",
+  "data": "2020-12-22",
+  "quando": "dez/2020",
+  "legenda": "Live realizada no dia 22 DEZ 20, no Colégio Batista Mineiro.",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_01.webp",
+    "mini": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_01-mini.webp",
+    "w": 1080,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_02.webp",
+    "mini": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_02-mini.webp",
+    "w": 1080,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_03.webp",
+    "mini": "assets/img/portfolio/2021-01-06_live-realizada-no-dia-22-dez-20-no-colegio-ba_03-mini.webp",
+    "w": 1080,
+    "h": 1080
+   }
+  ],
+  "data_post": "2021-01-06"
+ },
+ {
   "id": "2020-10-26_live-realizada-no-dia-25-10-com-o-parceiro-me",
   "titulo": "Live realizada no dia 25/10 com o parceiro Messias do Som. Agradecemos ao…",
-  "data": "2020-10-26",
+  "data": "2020-10-25",
   "quando": "out/2020",
   "legenda": "Live realizada no dia 25/10 com o parceiro Messias do Som. Agradecemos ao Eduardo Rabello e Banda pela preferência! Segue o link da live:\nhttps://youtu.be/DHiE0VSUGoA",
   "fotos": [
@@ -894,7 +896,8 @@
     "w": 1920,
     "h": 1080
    }
-  ]
+  ],
+  "data_post": "2020-10-26"
  },
  {
   "id": "2020-10-23_evento-o-grande-encontro-2020-trabalhamos-com",
@@ -1164,10 +1167,114 @@
   ]
  },
  {
+  "id": "2020-10-01_live-25-09-20",
+  "titulo": "Live 25-09-20",
+  "data": "2020-09-25",
+  "quando": "set/2020",
+  "legenda": "Live 25-09-20",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-25-09-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-25-09-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-25-09-20_02.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-25-09-20_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-25-09-20_03.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-25-09-20_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "data_post": "2020-10-01"
+ },
+ {
+  "id": "2020-10-01_live-grupo-tradicao-30-08-20",
+  "titulo": "Live Grupo Tradição - 30-08-20",
+  "data": "2020-08-30",
+  "quando": "ago/2020",
+  "legenda": "Live Grupo Tradição - 30-08-20",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-30-08-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-30-08-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "data_post": "2020-10-01"
+ },
+ {
+  "id": "2020-10-01_live-2-escolinha-na-tv-13-08-20",
+  "titulo": "Live 2 - Escolinha na TV - 13-08-20",
+  "data": "2020-08-13",
+  "quando": "ago/2020",
+  "legenda": "Live 2 - Escolinha na TV - 13-08-20",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_02.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_03.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "data_post": "2020-10-01"
+ },
+ {
+  "id": "2020-10-01_live-caipira-do-core-11-07-20",
+  "titulo": "Live Caipira do Core - 11-07-20",
+  "data": "2020-07-11",
+  "quando": "jul/2020",
+  "legenda": "Live Caipira do Core - 11-07-20",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-caipira-do-core-11-07-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-caipira-do-core-11-07-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "data_post": "2020-10-01"
+ },
+ {
+  "id": "2020-10-01_live-escolinha-na-tv-10-07-20",
+  "titulo": "Live Escolinha na TV - 10-07-20",
+  "data": "2020-07-10",
+  "quando": "jul/2020",
+  "legenda": "Live Escolinha na TV - 10-07-20",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-escolinha-na-tv-10-07-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-escolinha-na-tv-10-07-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "data_post": "2020-10-01"
+ },
+ {
   "id": "2020-10-01_live-vovo-do-galo-100-anos-08-07-20",
   "titulo": "Live Vovó do Galo - 100 Anos - 08-07-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
+  "data": "2020-07-08",
+  "quando": "jul/2020",
   "legenda": "Live Vovó do Galo - 100 Anos - 08-07-20",
   "fotos": [
    {
@@ -1206,118 +1313,36 @@
     "w": 1920,
     "h": 1080
    }
-  ]
+  ],
+  "data_post": "2020-10-01"
  },
  {
-  "id": "2020-10-01_live-grupo-tradicao-30-08-20",
-  "titulo": "Live Grupo Tradição - 30-08-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live Grupo Tradição - 30-08-20",
+  "id": "2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr",
+  "titulo": "Live de Cerimônia de Diplomação e posse do Grão-Mestrado - 24-06-20",
+  "data": "2020-06-24",
+  "quando": "jun/2020",
+  "legenda": "Live de Cerimônia de Diplomação e posse do Grão-Mestrado - 24-06-20",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-30-08-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-30-08-20_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
- },
- {
-  "id": "2020-10-01_live-grupo-tradicao-07-06-20",
-  "titulo": "Live Grupo Tradição - 07-06-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live Grupo Tradição - 07-06-20",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-07-06-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-07-06-20_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
- },
- {
-  "id": "2020-10-01_live-grupo-som-da-batucada-21-06-20",
-  "titulo": "Live Grupo Som da Batucada - 21-06-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live Grupo Som da Batucada - 21-06-20",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_01-mini.webp",
+    "src": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_01-mini.webp",
     "w": 1920,
     "h": 1080
    },
    {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_02.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_03.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_04.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_04-mini.webp",
+    "src": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_02.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_02-mini.webp",
     "w": 1920,
     "h": 1080
    }
-  ]
- },
- {
-  "id": "2020-10-01_live-grupo-pura-euforia-20-06-20",
-  "titulo": "Live Grupo Pura Euforia - 20-06-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live Grupo Pura Euforia - 20-06-20",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_02.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_03.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
- },
- {
-  "id": "2020-10-01_live-escolinha-na-tv-10-07-20",
-  "titulo": "Live Escolinha na TV - 10-07-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live Escolinha na TV - 10-07-20",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-escolinha-na-tv-10-07-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-escolinha-na-tv-10-07-20_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
+  ],
+  "data_post": "2020-10-01"
  },
  {
   "id": "2020-10-01_live-do-colegio-batista-22-06-20",
   "titulo": "Live do Colégio Batista - 22-06-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
+  "data": "2020-06-22",
+  "quando": "jun/2020",
   "legenda": "Live do Colégio Batista - 22-06-20",
   "fotos": [
    {
@@ -1344,49 +1369,92 @@
     "w": 1920,
     "h": 1080
    }
-  ]
+  ],
+  "data_post": "2020-10-01"
  },
  {
-  "id": "2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr",
-  "titulo": "Live de Cerimônia de Diplomação e posse do Grão-Mestrado - 24-06-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live de Cerimônia de Diplomação e posse do Grão-Mestrado - 24-06-20",
+  "id": "2020-10-01_live-grupo-som-da-batucada-21-06-20",
+  "titulo": "Live Grupo Som da Batucada - 21-06-20",
+  "data": "2020-06-21",
+  "quando": "jun/2020",
+  "legenda": "Live Grupo Som da Batucada - 21-06-20",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_01-mini.webp",
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_01-mini.webp",
     "w": 1920,
     "h": 1080
    },
    {
-    "src": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_02.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-de-cerimonia-de-diplomacao-e-posse-do-gr_02-mini.webp",
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_02.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_03.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_03-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_04.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-som-da-batucada-21-06-20_04-mini.webp",
     "w": 1920,
     "h": 1080
    }
-  ]
+  ],
+  "data_post": "2020-10-01"
  },
  {
-  "id": "2020-10-01_live-caipira-do-core-11-07-20",
-  "titulo": "Live Caipira do Core - 11-07-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live Caipira do Core - 11-07-20",
+  "id": "2020-10-01_live-grupo-pura-euforia-20-06-20",
+  "titulo": "Live Grupo Pura Euforia - 20-06-20",
+  "data": "2020-06-20",
+  "quando": "jun/2020",
+  "legenda": "Live Grupo Pura Euforia - 20-06-20",
   "fotos": [
    {
-    "src": "assets/img/portfolio/2020-10-01_live-caipira-do-core-11-07-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-caipira-do-core-11-07-20_01-mini.webp",
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_02.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_02-mini.webp",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_03.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-pura-euforia-20-06-20_03-mini.webp",
     "w": 1920,
     "h": 1080
    }
-  ]
+  ],
+  "data_post": "2020-10-01"
+ },
+ {
+  "id": "2020-10-01_live-grupo-tradicao-07-06-20",
+  "titulo": "Live Grupo Tradição - 07-06-20",
+  "data": "2020-06-07",
+  "quando": "jun/2020",
+  "legenda": "Live Grupo Tradição - 07-06-20",
+  "fotos": [
+   {
+    "src": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-07-06-20_01.webp",
+    "mini": "assets/img/portfolio/2020-10-01_live-grupo-tradicao-07-06-20_01-mini.webp",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "data_post": "2020-10-01"
  },
  {
   "id": "2020-10-01_live-andinho-santo-19-05-20",
   "titulo": "Live Andinho Santo - 19-05-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
+  "data": "2020-05-19",
+  "quando": "mai/2020",
   "legenda": "Live Andinho Santo - 19-05-20",
   "fotos": [
    {
@@ -1413,60 +1481,7 @@
     "w": 1920,
     "h": 1080
    }
-  ]
- },
- {
-  "id": "2020-10-01_live-25-09-20",
-  "titulo": "Live 25-09-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live 25-09-20",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-25-09-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-25-09-20_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-25-09-20_02.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-25-09-20_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-25-09-20_03.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-25-09-20_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
- },
- {
-  "id": "2020-10-01_live-2-escolinha-na-tv-13-08-20",
-  "titulo": "Live 2 - Escolinha na TV - 13-08-20",
-  "data": "2020-10-01",
-  "quando": "out/2020",
-  "legenda": "Live 2 - Escolinha na TV - 13-08-20",
-  "fotos": [
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_01.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_01-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_02.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_02-mini.webp",
-    "w": 1920,
-    "h": 1080
-   },
-   {
-    "src": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_03.webp",
-    "mini": "assets/img/portfolio/2020-10-01_live-2-escolinha-na-tv-13-08-20_03-mini.webp",
-    "w": 1920,
-    "h": 1080
-   }
-  ]
+  ],
+  "data_post": "2020-10-01"
  }
 ]
