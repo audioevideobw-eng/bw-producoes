@@ -64,15 +64,18 @@ async function avisarCelular(p: Pedido) {
   const topico = env("NTFY_TOPIC");
   if (topico) {
     const wa = soNumeros(p.whatsapp);
-    const r = await fetch(`https://ntfy.sh/${encodeURIComponent(topico)}`, {
+    // Formato JSON: aceita acentos no título e na mensagem.
+    const r = await fetch("https://ntfy.sh/", {
       method: "POST",
-      headers: {
-        Title: "BW Produções - novo orçamento",
-        Priority: "high",
-        Tags: "movie_camera",
-        ...(wa ? { Click: `https://wa.me/55${wa.replace(/^55/, "")}` } : {}),
-      },
-      body: `${texto}\n${p.email}${p.mensagem ? "\n\n" + p.mensagem.slice(0, 500) : ""}`,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        topic: topico,
+        title: "BW Produções — novo orçamento",
+        message: `${texto}\n${p.email}${p.mensagem ? "\n\n" + p.mensagem.slice(0, 500) : ""}`,
+        priority: 4,
+        tags: ["movie_camera"],
+        ...(wa ? { click: `https://wa.me/55${wa.replace(/^55/, "")}` } : {}),
+      }),
     });
     res.push(`ntfy ${r.status}`);
   }
