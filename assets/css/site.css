@@ -64,3 +64,19 @@ input[type="date"]{color-scheme:dark}
 .form-status.erro{color:#F2A3A3}
 .campo-erro{border-color:#F2A3A3!important}
 button[disabled]{opacity:.6;cursor:wait}
+
+/* Botão do topo — contorno fino, moderno */
+.bw-cta{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 20px;border-radius:999px;
+  border:1px solid rgba(133,123,64,.7);background:rgba(133,123,64,.08);color:var(--papel);
+  font-family:Montserrat,sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  transition:background .25s ease,color .25s ease,border-color .25s ease}
+.bw-cta svg{transition:transform .25s ease}
+.bw-cta:hover{background:var(--ouro);border-color:var(--ouro);color:var(--preto)}
+.bw-cta:hover svg{transform:translateX(3px)}
+
+/* Logo da abertura — integrado ao fundo, menos chamativo */
+.bw-hero-logo img{opacity:.38;mix-blend-mode:screen;filter:saturate(.75) contrast(1.05);
+  -webkit-mask-image:radial-gradient(circle closest-side,#000 62%,transparent 100%);
+  mask-image:radial-gradient(circle closest-side,#000 62%,transparent 100%);
+  transform:scale(1.15);transition:opacity .6s ease}
+.bw-hero-logo:hover img{opacity:.6}
