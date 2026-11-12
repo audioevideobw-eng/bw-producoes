@@ -14,10 +14,10 @@ window.BW_CONFIG = {
   youtube: "",                  // link do canal. Ex.: "https://youtube.com/@bwproducoes"
   regiao: "Belo Horizonte, região metropolitana e Minas Gerais",                   // ex.: "Belo Horizonte e região"
   horario: "",                  // ex.: "Seg. a sex., 9h às 18h · eventos em qualquer dia"
-  mapa_embed_url: "",           // Google Maps > Compartilhar > Incorporar mapa > copie só o link do src
+  mapa_embed_url: "https://www.google.com/maps?q=Belo+Horizonte,+MG&z=9&output=embed",           // Google Maps > Compartilhar > Incorporar mapa > copie só o link do src
 
   /* ---- Showreel ---- */
-  showreel_url: "",             // YouTube, Vimeo ou Instagram (abre no botão de play)
+  showreel_url: "https://www.instagram.com/reel/DfaktCgJ4dN/",             // YouTube, Vimeo ou Instagram (abre no botão de play)
   showreel_bg_mp4: "",          // opcional: vídeo MP4 curto e sem som para o fundo da página inicial
 
   /* ---- Portfólio editável por planilha ----

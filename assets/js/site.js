@@ -100,7 +100,7 @@
       return { src: "https://www.youtube-nocookie.com/embed/" + m[1] + "?autoplay=1&rel=0", vertical: /shorts\//.test(url) };
     if ((m = url.match(/vimeo\.com\/(?:video\/)?(\d+)/)))
       return { src: "https://player.vimeo.com/video/" + m[1] + "?autoplay=1", vertical: false };
-    if ((m = url.match(/instagram\.com\/(?:p|reel|reels|tv)\/([\w-]+)/)))
+    if ((m = url.match(/instagram\.com\/(?:[\w.]+\/)?(?:p|reel|reels|tv)\/([\w-]+)/)))
       return { src: "https://www.instagram.com/p/" + m[1] + "/embed", vertical: true };
     if (/\.(mp4|webm)(\?|$)/i.test(url)) return { video: url, vertical: false };
     if (/\.(jpe?g|png|webp)(\?|$)/i.test(url)) return { img: url, vertical: false };
