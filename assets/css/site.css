@@ -85,3 +85,6 @@ button[disabled]{opacity:.6;cursor:wait}
 
 /* Versão maior do botão "Pedir orçamento" (abertura e chamadas) */
 .bw-cta-lg{min-height:48px;padding:0 26px;font-size:13px}
+
+/* Celular: esconde o "Pedir orçamento" do cabeçalho (os da página continuam) */
+@media(max-width:900px){header .bw-cta:not(.bw-cta-lg){display:none!important}}
