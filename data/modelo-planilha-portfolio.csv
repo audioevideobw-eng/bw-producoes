@@ -1,0 +1,4 @@
+titulo,cliente,ano,tipo,video_url,capa_url,link,destaque,ordem,publicado
+Convenção Nacional de Vendas,Empresa X,2026,transmissao,https://www.youtube.com/watch?v=XXXXXXXXXXX,https://.../capa.jpg,,sim,1,sim
+Aftermovie Festa de Fim de Ano,Empresa Y,2026,aftermovie,https://www.instagram.com/reel/XXXXXXXXX/,,,sim,2,sim
+Premiação Anual,Empresa Z,2025,fotografia,,https://.../foto.jpg,https://link-da-galeria,,3,sim

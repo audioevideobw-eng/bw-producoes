@@ -1,0 +1,110 @@
+[
+  {
+    "titulo": "[Nome do evento]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "transmissao",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "sim",
+    "ordem": 1,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Convenção anual]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "corporativo",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "sim",
+    "ordem": 2,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Lançamento de produto]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "aftermovie",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "sim",
+    "ordem": 3,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Premiação]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "fotografia",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "sim",
+    "ordem": 4,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Show ao vivo]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "show",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "sim",
+    "ordem": 5,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Formatura on-line]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "transmissao",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "sim",
+    "ordem": 6,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Treinamento de equipe]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "corporativo",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "",
+    "ordem": 7,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Ensaio fotográfico]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "fotografia",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "",
+    "ordem": 8,
+    "publicado": "sim"
+  },
+  {
+    "titulo": "[Festa de fim de ano]",
+    "cliente": "[Cliente]",
+    "ano": "[Ano]",
+    "tipo": "aftermovie",
+    "video_url": "",
+    "capa_url": "",
+    "link": "",
+    "destaque": "",
+    "ordem": 9,
+    "publicado": "sim"
+  }
+]

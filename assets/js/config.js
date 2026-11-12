@@ -1,0 +1,34 @@
+/* =========================================================================
+   CONFIGURAÇÃO DO SITE — BW PRODUÇÕES
+   Este é o ÚNICO arquivo que você precisa editar para mudar contatos,
+   links, vídeos, planilha do portfólio e métricas. Deixe "" para desligar.
+   ========================================================================= */
+window.BW_CONFIG = {
+
+  /* ---- Contatos (aparecem no rodapé, no Contato e no botão do WhatsApp) ---- */
+  whatsapp: "",                 // só números com DDI e DDD. Ex.: "5531999999999"
+  whatsapp_label: "",           // como aparece escrito. Ex.: "(31) 99999-9999"
+  whatsapp_msg: "Olá! Vim pelo site da BW Produções e quero um orçamento.",
+  email: "",                    // ex.: "contato@bwproducoes.com.br"
+  instagram: "",                // usuário sem @. Ex.: "bwproducoes"
+  youtube: "",                  // link do canal. Ex.: "https://youtube.com/@bwproducoes"
+  regiao: "",                   // ex.: "Belo Horizonte e região"
+  horario: "",                  // ex.: "Seg. a sex., 9h às 18h · eventos em qualquer dia"
+  mapa_embed_url: "",           // Google Maps > Compartilhar > Incorporar mapa > copie só o link do src
+
+  /* ---- Showreel ---- */
+  showreel_url: "",             // YouTube, Vimeo ou Instagram (abre no botão de play)
+  showreel_bg_mp4: "",          // opcional: vídeo MP4 curto e sem som para o fundo da página inicial
+
+  /* ---- Portfólio editável por planilha ----
+     Google Planilhas > Arquivo > Compartilhar > Publicar na Web > a aba > CSV > copie o link.
+     Vazio = usa o arquivo data/portfolio.json */
+  portfolio_csv_url: "",
+
+  /* ---- Supabase (pedidos de orçamento) — mesmo projeto da plataforma Brightway ---- */
+  supabase_url: "https://zdtnetplvdonogmdvarx.supabase.co",
+  supabase_anon_key: "sb_publishable_qJ2mIx1hcn_ZH75-yxJiDA_OI-EHyIU",
+
+  /* ---- Métricas ---- */
+  ga4_id: ""                    // Google Analytics 4. Ex.: "G-XXXXXXXXXX"
+};
