@@ -121,7 +121,8 @@ function emailCliente(p: Pedido) {
 Deno.serve(async (req) => {
   if (req.method !== "POST") return new Response("método não permitido", { status: 405 });
   const segredo = env("WEBHOOK_SECRET");
-  if (!segredo || req.headers.get("x-webhook-secret") !== segredo) return new Response("não autorizado", { status: 401 });
+  const recebido = req.headers.get("x-webhook-secret") ?? new URL(req.url).searchParams.get("x-webhook-secret");
+  if (!segredo || recebido !== segredo) return new Response("não autorizado", { status: 401 });
 
   const corpo = await req.json().catch(() => null);
   const p: Pedido | undefined = corpo?.record;
