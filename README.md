@@ -11,6 +11,8 @@ assets/img/                ← logos, favicons e imagem de compartilhamento
 data/portfolio.json        ← portfólio, quando não houver planilha
 data/modelo-planilha-portfolio.csv   ← modelo da planilha do portfólio
 supabase/migrations/001_orcamentos.sql   ← cria a tabela de pedidos
+supabase/migrations/002_portfolio_fotos.sql  ← fotos do portfólio e o painel
+supabase/migrations/003_limites_e_regras.sql ← limites do formulário e quem lê os pedidos (rodar depois do 002)
 supabase/functions/novo-orcamento/index.ts  ← automação: avisos e e-mails
 sitemap.xml, robots.txt    ← SEO
 ```
@@ -92,11 +94,11 @@ Você pode escolher uma de duas formas.
 
 O `config.js` já vem com o endereço e a chave pública do mesmo projeto Supabase da plataforma Brightway. Essa chave é feita para ficar no site e só permite o que as regras de segurança deixam.
 
-1. Entre no Supabase, abra o projeto da plataforma, vá em **SQL Editor › New query**, cole o conteúdo de `supabase/migrations/001_orcamentos.sql` e clique em **Run**.
+1. Entre no Supabase, abra o projeto da plataforma, vá em **SQL Editor › New query**, cole o conteúdo de `supabase/migrations/001_orcamentos.sql` e clique em **Run**; depois faça o mesmo com o `002` e o `003`, nessa ordem.
 2. Isso cria a tabela **`orcamentos`** com estas regras:
    - o site **só consegue inserir** pedidos; ninguém de fora lê, altera ou apaga;
-   - usuários **logados** na plataforma podem ver e atualizar os pedidos (status: novo, em contato, proposta enviada, fechado, perdido);
-   - limite de 5 pedidos por e-mail por hora, contra spam.
+   - só a **administração da BW** (e-mail em `bw_admins`, função `is_bw_admin()`) vê e atualiza os pedidos (status: novo, em contato, proposta enviada, fechado, perdido) — contas comuns da Brightway não veem nada;
+   - limites contra spam: 3 pedidos por e-mail por hora e 5 por dia; no site inteiro, 20 por hora e 60 por dia (cada pedido manda 2 e-mails pelo Gmail da BW).
 3. Para testar: envie um pedido pelo site e veja a linha nova em **Table Editor › orcamentos**.
 
 Nenhuma tabela da plataforma é alterada. Para ver os pedidos dentro da plataforma Brightway, peça à ferramenta que gera a plataforma uma tela que leia a tabela `orcamentos`.

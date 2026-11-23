@@ -34,21 +34,11 @@ create policy "site insere orcamento"
   to anon
   with check (status = 'novo' and notificado = false and observacoes is null and origem = 'site');
 
--- Usuários logados na plataforma Brightway podem ver e atualizar os pedidos.
--- Se a plataforma tiver um controle de administrador, troque "true" pela regra dela.
-drop policy if exists "equipe le orcamentos" on public.orcamentos;
-create policy "equipe le orcamentos"
-  on public.orcamentos for select
-  to authenticated
-  using (true);
+-- QUEM LÊ E ALTERA os pedidos: só a administração da BW (is_bw_admin) — regra criada no 003_limites_e_regras.sql.
+-- (23/11/2026) Antes este arquivo criava as regras com "using (true)": QUALQUER conta logada da Brightway (onde qualquer
+-- pessoa cria conta) lia e alterava os pedidos. Este arquivo não cria nem apaga mais essas regras — rodá-lo de novo não reabre a brecha.
 
-drop policy if exists "equipe atualiza orcamentos" on public.orcamentos;
-create policy "equipe atualiza orcamentos"
-  on public.orcamentos for update
-  to authenticated
-  using (true) with check (true);
-
--- Limite simples contra spam: no máximo 5 pedidos do mesmo e-mail por hora.
+-- Limite contra spam (versão de 2026-11-12). A versão atual, com limite também por dia e no site inteiro, está no 003.
 create or replace function public.orcamentos_limite()
 returns trigger language plpgsql security definer set search_path = public as $$
 begin
