@@ -48,7 +48,6 @@ Abra o arquivo no GitHub (ícone de lápis), preencha entre as aspas e salve:
 | `mapa_embed_url` | No Google Maps: Compartilhar › Incorporar mapa › copie só o endereço que está dentro de `src="..."` |
 | `showreel_url` | Link do YouTube, Vimeo ou Instagram (post ou reel) |
 | `showreel_bg_mp4` | Opcional: um MP4 curto (10 a 20 s, sem som, até ~8 MB) para o fundo da página inicial. Suba em `assets/video/` e coloque `assets/video/showreel.mp4` |
-| `ga4_id` | Passo 6 |
 
 Os campos vazios continuam aparecendo no site como `[marcador]`. Os botões de WhatsApp levam para a página de contato até o número ser preenchido.
 
@@ -164,19 +163,8 @@ Teste mandando um pedido pelo site. Em segundos chega o aviso no celular e os e-
 
 ## 6. Métricas e SEO
 
-**Google Analytics 4**
-1. Em analytics.google.com, crie uma propriedade e um fluxo **Web** com o endereço do site.
-2. Copie o ID `G-XXXXXXXXXX` para `ga4_id` no `config.js`.
-3. Eventos já enviados:
-
-| Evento | Quando |
-| --- | --- |
-| `generate_lead` | pedido de orçamento enviado |
-| `click_whatsapp` | clique em qualquer botão do WhatsApp |
-| `play_video` | vídeo aberto no site |
-| `filtro_portfolio` | filtro do portfólio usado |
-
-Em GA4 › Admin › Eventos, marque `generate_lead` como **evento-chave** (conversão).
+**Sem Google Analytics (desde 25/11/2026).** O site fica no mesmo endereço da plataforma Brightway (audioevideobw-eng.github.io), e um script
+de fora aqui teria acesso à sessão de login de lá. Não coloque Analytics, pixel, chat ou outro script de terceiros neste site.
 
 **Google Search Console**
 1. Adicione o site em search.google.com/search-console.
@@ -198,5 +186,4 @@ Em GA4 › Admin › Eventos, marque `generate_lead` como **evento-chave** (conv
 - [ ] SQL rodado e um pedido de teste aparecendo na tabela
 - [ ] Função publicada, segredos criados, webhook ligado e aviso chegando no celular
 - [ ] Endereço final atualizado no `sitemap.xml`, `robots.txt` e nas tags `og:url` e `canonical`
-- [ ] GA4 ligado e `generate_lead` marcado como conversão
 - [ ] Testado no celular: menu, botões, formulário e vídeos

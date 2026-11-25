@@ -6,20 +6,10 @@
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
-  /* ------------------------------------------------------------ MÉTRICAS (GA4) */
-  function track(evento, params) {
-    if (typeof window.gtag === "function") window.gtag("event", evento, params || {});
-  }
-  if (C.ga4_id) {
-    var g = document.createElement("script");
-    g.async = true;
-    g.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(C.ga4_id);
-    document.head.appendChild(g);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag("js", new Date());
-    window.gtag("config", C.ga4_id);
-  }
+  /* ------------------------------------------------------------ MÉTRICAS
+     Sem Google Analytics desde 25/11/2026: o site divide o endereço (audioevideobw-eng.github.io) com a plataforma
+     Brightway, e um script de fora aqui teria acesso à sessão de login de lá. Não ponha script de terceiros neste site. */
+  function track() {}
 
   /* ------------------------------------------------------------ CONTATOS */
   function waLink(msg) {
