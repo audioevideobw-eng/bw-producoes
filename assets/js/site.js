@@ -110,7 +110,7 @@
   var player = null, ultimoFoco = null;
   function abrirPlayer(url, titulo) {
     var e = embedDe(url);
-    if (!e) { if (url) window.open(url, "_blank", "noopener"); return; }
+    if (!e) { if (url && /^https?:\/\//i.test(url)) window.open(url, "_blank", "noopener"); return; }  // só http(s): nada de javascript: vindo da planilha
     player = player || $("#player");
     if (!player) return;
     var frame = $(".player-frame", player);
